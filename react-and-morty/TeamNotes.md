@@ -1,7 +1,7 @@
 Van egy fő API-k ezt kell használni
 
-1. kell egy landing page: "A" és "B" gomb + 1 kép (logo)
-2. kell egy másik oldal amit az "A" gomb meghív:
+1. kell egy landing page: "CHARACTERS" és "LOCATIONS" gomb + 1 kép (logo)
+2. kell egy másik oldal amit az "CHARACTERS" gomb meghív:
                     minimum 20 kártya:
                             -1. neve
                             -2. képe
@@ -13,7 +13,7 @@ Van egy fő API-k ezt kell használni
                 - hol tartozkodott az utolsó részben
                 - honnan származik: (golygó és lokáció)
 
-3. kell egy harmadik oldal amit meghív a "B" gomb:
+3. kell egy harmadik oldal amit meghív a "LOCATIONS" gomb:
                 - bolygón lévő helyszín
                 - golygó típusa
                

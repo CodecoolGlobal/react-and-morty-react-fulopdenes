@@ -29,7 +29,14 @@ html, body {
     margin-bottom: 17px;
     color: black;
     box-shadow: 3px 3px 15px 1px chartreuse;
+    transition: 500ms;
+}
 
+.character-Card:hover{
+    width: 250px;
+    height: 350px;
+    box-shadow: 5px 5px 15px 1px chartreuse;
+    transition: 500ms;
 }
 
 .char-name{

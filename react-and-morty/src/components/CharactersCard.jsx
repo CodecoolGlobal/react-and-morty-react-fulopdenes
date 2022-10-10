@@ -1,8 +1,7 @@
 
 export default function CharacterCard (props) {
-
     const character = props.character.results
-
+  
     if (character !== undefined) {
          return (
         <>

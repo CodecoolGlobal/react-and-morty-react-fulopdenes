@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import CharacterCard from "./CharacterCard";
+import CharacterCard from "./CharactersCard";
 import { useCharacters } from "../api/useData";
 
 export default function Characters () {

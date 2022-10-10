@@ -9,7 +9,7 @@ export default function Characters () {
         <>
         <div className="character-page">
             <Link to="/">
-            <button>⬅BACK TO LANDING PAGE</button>
+            <button>BACK TO LANDING PAGE</button>
             </Link>
             <p id="character-title">CHARACTERS</p>
             <CharacterCard 

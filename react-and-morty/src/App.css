@@ -40,3 +40,8 @@ html, body {
     height: fit-content;
     border: 1px solid black;
 }
+
+#landing-image{
+    width: 100%;
+    height: auto;
+}

@@ -9,8 +9,8 @@ export default function Characters () {
 
     return (
         <>
-        <div>
-            <p>Characters</p>
+        <div className="character-page">
+            {/* <p>Characters</p> */}
             <CharacterCard 
                 character={characters}/>
             <Link to="/">

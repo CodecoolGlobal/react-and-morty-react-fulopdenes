@@ -1,4 +1,32 @@
+html, body {
+    margin: 0;
+}
+.character-page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 3px;
+}
+
 .character-Card {
-    background-color: gray;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 161, 64);
+    border: 3px solid black;
+    border-radius: 1rem;
+    width: 220px;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.char-image{
+    width: 200px;
+    align-self: center;
+    border-radius: 1rem;
+    padding-bottom: 10px;
 }

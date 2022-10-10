@@ -1,16 +1,21 @@
 
 export default function CharacterCard (props) {
-    if (props.character.results !== undefined) {
+
+    const character = props.character.results
+
+    if (character !== undefined) {
          return (
         <>
-        <div className="character-Card">
-            <div>{props.character.results[0].id}</div>
-            <div>{props.character.results[0].name}</div>
-            <div>{props.character.results[0].status}</div>
-        </div>
+        {character.map((char) => {
+            return (
+             <div className="character-Card" key={char.id}>
+             <img src={char.image} className="char-image"></img>
+             <div>{char.name}</div>
+             <div>{char.status}</div>
+            </div>
+            )
+        })}
         </>
     )
-    }
-    
-    
+    }   
 }

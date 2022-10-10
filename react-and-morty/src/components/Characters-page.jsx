@@ -5,17 +5,15 @@ import { useCharacters } from "../api/useData";
 export default function Characters () {
     const characters = useCharacters(1);
 
-    // console.log(characters);
-
     return (
         <>
         <div className="character-page">
-            {/* <p>Characters</p> */}
+            <Link to="/">
+            <button>⬅BACK TO LANDING PAGE</button>
+            </Link>
+            <p id="character-title">CHARACTERS</p>
             <CharacterCard 
                 character={characters}/>
-            <Link to="/">
-            <button>BACK TO LANDING PAGE</button>
-            </Link>
         </div>
         </>
     )

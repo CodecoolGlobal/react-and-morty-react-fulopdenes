@@ -1,5 +1,7 @@
 html, body {
     margin: 0;
+    background-color: rgb(28, 5, 55);
+    color: chartreuse;
 }
 
 .character-page{
@@ -7,30 +9,87 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin: 3px;
+    justify-content:space-around;
 }
 
 .character-Card {
     display: flex;
     flex-direction: column;
     background-color: rgb(226, 161, 64);
-    border: 3px solid black;
+    border: 8px solid rgb(60, 7, 60);
     border-radius: 1rem;
-    width: 220px;
-    height: 300px;
-    justify-content: center;
+    width: 240px;
+    height: 340px;
+    justify-content: space-around;
     text-align: center;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
+    margin-bottom: 17px;
+    color: black;
+    box-shadow: 3px 3px 15px 1px chartreuse;
+
+}
+
+.char-name{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0px 2px 15px 1px black;
+    z-index: 1;
+    position: relative;
 }
 
 .char-image{
-    width: 200px;
+    width:inherit;
     align-self: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0px 5px 15px 1px black;
+    z-index: 0;
+    position: relative;
+    border: 3px solid rgb(60, 7, 60);
+    transition: 500ms;
+}
+
+.character-Card:hover .char-image{
+    width: 250px;
     border-radius: 1rem;
-    padding-bottom: 10px;
+    transition: 500ms;
+}
+
+.char-image.status-dead{
+    filter: grayscale(100%);
+    transition: 500ms;
+}
+
+.char-image.status-dead:hover{
+    filter: grayscale(0%);
+    transition: 500ms;
+}
+
+/* .char-image.status-unknown{
+    filter: invert(0%);
+    transition: 500ms;
+} */
+
+.character-Card:has(.char-image.status-unknown){
+    filter: invert(0%);
+    transition: 500ms; 
+}
+
+.character-Card:has(.char-image.status-unknown):hover{
+    filter: invert(100%);
+    transition: 500ms;
+}
+
+.status-dead{
+    color: rgb(95, 13, 13);
+    text-decoration: line-through;
+}
+
+.status-unknown{
+    color: rgb(58, 57, 57);
 }
 
 #character-title{
@@ -39,7 +98,7 @@ html, body {
     font-size: 42px;
     font-weight: 600;
     height: fit-content;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 #landing-image{
@@ -47,6 +106,10 @@ html, body {
     height: 100%;
     position: relative;
     z-index: 0;
+}
+
+.pagination{
+    width: 100%;
 }
 
 /* #char-button{

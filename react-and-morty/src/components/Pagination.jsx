@@ -1,7 +1,7 @@
 export default function Pagination(props) {
   return (
     <>
-      <div>{props.page}</div>
+      <div className="pagination">{props.page}</div>
     </>
   );
 }

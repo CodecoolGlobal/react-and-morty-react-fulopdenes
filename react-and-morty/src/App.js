@@ -9,8 +9,8 @@ import Characters from "./components/Characters-page";
 import Locations from "./components/Locations-page";
 
 function App() {
-  const characters = useCharacters(1);
-  const locations = useLocations(1);
+  // const characters = useCharacters(1);
+  // const locations = useLocations(1);
 
   // console.log("Characters data: ");
   // console.log(characters);
@@ -25,7 +25,7 @@ function App() {
             <Route index element={<LandingPage />} />
             <Route
               path="characters"
-              element={<Characters characters={characters} />}
+              element={<Characters/>}
             />
             <Route path="locations" element={<Locations />} />
           </Route>

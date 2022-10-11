@@ -1,6 +1,8 @@
 html, body {
     margin: 0;
-    background-color: rgb(28, 5, 55);
+    /* background-color: rgb(28, 5, 55); */
+    background-image: url(https://images8.alphacoders.com/633/633270.png);
+    background-size: contain;
     color: chartreuse;
 }
 
@@ -18,7 +20,8 @@ html, body {
     font-size: 42px;
     font-weight: 600;
     height: fit-content;
-    border: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 #landing-image{
@@ -53,4 +56,31 @@ html, body {
 
 .css-1b2iw0b {
     width: 100% !important;
+}
+
+.go-back-button{
+    
+    margin-top: 10px;
+    width: 100%;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    clip-path: polygon(
+        0.5em 0%,
+        100% 0,
+        100% calc(100% - 0.5em),
+        calc(100% - 0.5em) 100%,
+        0 100%,
+        0% 0.5em);
+    font-weight: 700;
+    color: rgba(70, 130, 10, 0.769);
+    transition: all 500ms;
+    border-color: rgba(255, 255, 255, 0.726);
+}
+
+.go-back-button:hover{
+    /* background-color: rgba(128, 255, 0, 0.441); */
+    /* background-color: rgba(82, 22, 137, 0.712); */
+    transition: all 500ms;
+    /* color: rgba(240, 218, 97, 0.737); */
+    color: chartreuse
 }

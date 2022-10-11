@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import CharacterCards from "./CharacterCards";
 import { useCharacters } from "../api/useData";
 import { useState, useEffect } from "react";
-import "./pagination.css";
+import "./Pagination.css";
 
 import Box from "@mui/material/Box";
 import { Pagination } from "@mui/material";
@@ -26,7 +26,7 @@ export default function Characters() {
     <>
       <div className="character-page">
         <Link to="/">
-          <button>⬅BACK TO LANDING PAGE</button>
+          <button className="go-back-button">⬅ BACK TO LANDING PAGE</button>
         </Link>
         <p id="character-title">CHARACTERS</p>
         {charDataLoaded ? (

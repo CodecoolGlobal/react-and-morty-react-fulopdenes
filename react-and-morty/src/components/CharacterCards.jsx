@@ -32,9 +32,13 @@ const Card = (props) => {
                 ? "status-unknown"
                 : "status-alive"
             }
-          ><i><sup><small>state:</small></sup></i> {char.status === "Dead" ?
-            `${char.status} ☠`:
-            char.status}
+          >
+            <i>
+              <sup>
+                <small>state:</small>
+              </sup>
+            </i>
+            {char.status === "Dead" ? `${char.status} ☠` : char.status}
           </div>
         </div>
         <div className="more-info-div">

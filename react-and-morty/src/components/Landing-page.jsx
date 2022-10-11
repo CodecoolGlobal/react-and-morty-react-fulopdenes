@@ -11,6 +11,7 @@ export default function LandingPage() {
           <img
             src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif"
             id="char-portal"
+            alt={"Character Portal"}
           ></img>
           <div id="char-text">CHARACTERS</div>
         </Link>
@@ -18,6 +19,7 @@ export default function LandingPage() {
           <img
             src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif"
             id="loc-portal"
+            alt={"Location Portal"}
           ></img>
           <div id="loc-text">LOCATIONS</div>
         </Link>

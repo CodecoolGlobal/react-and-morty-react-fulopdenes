@@ -26,7 +26,7 @@ export default function Characters() {
     <>
       <div className="character-page">
         <Link to="/">
-          <button>⬅BACK TO LANDING PAGE</button>
+          <button className="go-back-button">⬅ BACK TO LANDING PAGE</button>
         </Link>
         <p id="character-title">CHARACTERS</p>
         {charDataLoaded ? (

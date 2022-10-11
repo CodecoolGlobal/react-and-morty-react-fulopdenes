@@ -80,18 +80,6 @@ html, body {
     transition: 500ms;
 } */
 
-.char-image.status-unknown{
-    filter: invert(100%);
-    border: 0;
-    transition: 500ms; 
-}
-
-.char-image.status-unknown:hover{
-    filter: invert(0%);
-    border: 3px solid rgb(60, 7, 60);
-    transition: 500ms;
-}
-
 .status-dead{
     color: rgb(95, 13, 13);
     text-decoration: line-through;

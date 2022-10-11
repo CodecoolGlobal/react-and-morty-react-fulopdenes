@@ -1,0 +1,108 @@
+.card-viewport {
+    border-radius: 1rem;
+    width: 240px;
+    height: 340px;
+    cursor: pointer;
+    margin: 10px;
+    margin-bottom: 17px;
+    color: black;
+    box-shadow: 3px 3px 15px 1px chartreuse;
+    transition: 500ms;
+    overflow: hidden;
+}
+
+.character-card {
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    transition: 500ms;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 161, 64);
+    /* border: 8px solid rgb(251, 184, 84); */
+    justify-content: space-around;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    height: 50%;
+}
+
+.card-viewport:hover{
+    width: 250px;
+    height: 350px;
+    box-shadow: 5px 5px 15px 1px chartreuse;
+    transition: 500ms;
+}
+
+.char-name{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: 0px 2px 15px 1px black;
+    z-index: 1;
+    position: relative;
+    transition: 500ms;
+    padding-top: 8px;
+    transition: 500ms;
+}
+
+.char-image{
+    width: 100%;
+    align-self: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0px 5px 15px 1px black;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 15px;
+    /* border: 3px solid rgb(60, 7, 60); */
+    transition: 500ms;
+}
+
+.card-viewport:hover .char-image{
+    width: 250px;
+    transition: 500ms;
+}
+
+.char-image.status-dead{
+    filter: grayscale(100%);
+    transition: 500ms;
+}
+
+.char-image.status-dead:hover{
+    filter: grayscale(0%);
+    transition: 500ms;
+}
+
+.status-alive{
+    transition: 500ms;
+}
+
+.status-dead{
+    color: rgb(95, 13, 13);
+    text-decoration: line-through;
+    transition: 500ms;
+}
+
+.status-unknown{
+    color: rgb(58, 57, 57);
+    transition: 500ms;
+}
+
+.clicked>div {
+    transform: translateY(-50%);
+    transition: all 500ms;
+}
+
+.more-info-div{
+    height: 50%;
+    transition: 500ms;
+    background-color: rgb(226, 161, 64);
+
+}
+
+.clicked > .more-info-div{
+    transition: 500ms;
+}

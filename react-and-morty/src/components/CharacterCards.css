@@ -16,6 +16,7 @@
     color: black;
     box-shadow: 3px 3px 15px 1px chartreuse;
     transition: 500ms;
+    overflow: hidden;
 }
 
 .character-Card:hover{
@@ -31,6 +32,7 @@
     box-shadow: 0px 2px 15px 1px black;
     z-index: 1;
     position: relative;
+    transition: 500ms;
 }
 
 .char-image{
@@ -61,15 +63,33 @@
     transition: 500ms;
 }
 
+.status-alive{
+    transition: 500ms;
+}
+
 .status-dead{
     color: rgb(95, 13, 13);
     text-decoration: line-through;
+    transition: 500ms;
 }
 
 .status-unknown{
     color: rgb(58, 57, 57);
+    transition: 500ms;
 }
 
 .clicked>* {
-    transform: translateX(-100px);
+    transform: translateY(-500px);
+    transition: 500ms;
+}
+
+.more-info-div{
+    transform: translateY(+500px);
+    transition: 500ms;
+
+}
+
+.clicked > .more-info-div{
+    transform: translateY(0);
+    transition: 500ms;
 }

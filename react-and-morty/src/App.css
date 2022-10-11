@@ -80,16 +80,6 @@ html, body {
     transition: 500ms;
 } */
 
-.character-Card:has(.char-image.status-unknown){
-    filter: invert(0%);
-    transition: 500ms; 
-}
-
-.character-Card:has(.char-image.status-unknown):hover{
-    filter: invert(100%);
-    transition: 500ms;
-}
-
 .status-dead{
     color: rgb(95, 13, 13);
     text-decoration: line-through;

@@ -5,7 +5,6 @@ export default function LandingPage() {
   return (
     <>
       <div className="landing-page">
-        <div id="title-text">Morty look! A well designed welcome page!</div>
         <div id="char-text">CHARACTERS</div>
         <Link to="/characters">
           <img
@@ -20,12 +19,15 @@ export default function LandingPage() {
           ></img>
         </Link>
         <header className="landing-page-welcome-text-container">
-          <h4>WELCOME AT</h4>
-          <h1>RICK AND MORTY</h1>
-          <h2>WEBCATALOG</h2>
+          <h4 className="drop-shadow">WELCOME AT</h4>
+          <h1 className="drop-shadow">RICK AND MORTY</h1>
+          <h2 className="drop-shadow">WEBCATALOG</h2>
+          <h5>
+            YOU CAN FIND MORE DETAILS ABOUT LOCATIONS AND CHARACTERS. PLEASE
+            SELECT A PORTAL …
+          </h5>
         </header>
       </div>
-
       <Outlet />
     </>
   );

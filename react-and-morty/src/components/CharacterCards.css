@@ -98,9 +98,23 @@
     height: 50%;
     transition: 500ms;
     background-color: rgb(226, 161, 64);
-
+    margin: 10px;
+    border-radius: 1rem;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem;
 }
 
-.clicked > .more-info-div{
-    transition: 500ms;
+.more-info-div>div {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.label {
+    font-size: normal;
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
 }

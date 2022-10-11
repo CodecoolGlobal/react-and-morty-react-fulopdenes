@@ -36,7 +36,24 @@ const Card = (props) => {
             {char.status}
           </div>
         </div>
-        <div className="more-info-div">Dingdong</div>
+        <div className="more-info-div">
+          <div >
+            <div className="label">species:</div>
+            <div>{char.species}</div>
+          </div>
+          <div >
+            <div className="label">gender:</div>
+            <div>{char.gender}</div>
+          </div>
+          <div >
+            <div className="label">Last known address:</div>
+            <div>{char.location.name}</div>
+          </div>
+          <div >
+            <div className="label">origin:</div>
+            <div>{char.origin.name}</div>
+          </div>
+        </div>
       </div>
     </div>
   );

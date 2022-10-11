@@ -4,7 +4,7 @@ import { useCharacters } from "../api/useData";
 import { useState, useEffect } from "react";
 import "./Pagination.css";
 import Box from "@mui/material/Box";
-import { Pagination, Typography } from "@mui/material";
+import { Pagination } from "@mui/material";
 import Header from "./Header";
 
 export default function Characters() {
@@ -63,7 +63,9 @@ export default function Characters() {
             </Box>
           </>
         ) : (
-          console.log("false")
+          <>
+            <div>loading...</div>
+          </>
         )}
       </div>
     </>

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
-import { useCharacters, useLocations } from "./api/useData";
+// import { useCharacters, useLocations } from "./api/useData";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/Landing-page";
 import Characters from "./components/Characters-page";

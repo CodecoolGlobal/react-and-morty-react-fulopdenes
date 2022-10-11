@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import CharacterCards from "./CharacterCards";
 import { useCharacters } from "../api/useData";
 import { useState, useEffect } from "react";
+import "./pagination.css";
 
 import Box from "@mui/material/Box";
 import { Pagination, Typography } from "@mui/material";
@@ -30,7 +31,7 @@ export default function Characters() {
         <p id="character-title">CHARACTERS</p>
         {charDataLoaded ? (
           <>
-            <div>
+            <div className="pagination">
               <Pagination
                 count={characters.info.pages}
                 page={page}
@@ -48,14 +49,16 @@ export default function Characters() {
                 alignItems: "center",
               }}
             >
-              <Pagination
-                count={characters.info.pages}
-                page={page}
-                variant="outlined"
-                shape="rounded"
-                color="primary"
-                onChange={handleChange}
-              />
+              <div className="pagination">
+                <Pagination
+                  count={characters.info.pages}
+                  page={page}
+                  variant="outlined"
+                  shape="rounded"
+                  color="primary"
+                  onChange={handleChange}
+                />
+              </div>
             </Box>
           </>
         ) : (

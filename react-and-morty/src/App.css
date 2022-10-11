@@ -80,13 +80,15 @@ html, body {
     transition: 500ms;
 } */
 
-.character-Card:has(.char-image.status-unknown){
-    filter: invert(0%);
+.char-image.status-unknown{
+    filter: invert(100%);
+    border: 0;
     transition: 500ms; 
 }
 
-.character-Card:has(.char-image.status-unknown):hover{
-    filter: invert(100%);
+.char-image.status-unknown:hover{
+    filter: invert(0%);
+    border: 3px solid rgb(60, 7, 60);
     transition: 500ms;
 }
 

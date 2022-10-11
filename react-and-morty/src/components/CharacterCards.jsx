@@ -35,8 +35,8 @@ const Card = (props) => {
           >
             {char.status}
           </div>
-          <div className="more-info-div">Dingdong</div>
         </div>
+        <div className="more-info-div">Dingdong</div>
       </div>
     </div>
   );

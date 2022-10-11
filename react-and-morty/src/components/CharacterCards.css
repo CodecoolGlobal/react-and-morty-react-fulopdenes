@@ -13,6 +13,9 @@
 
 .character-card {
     height: 200%;
+    display: flex;
+    flex-direction: column;
+    transition: 500ms;
 }
 
 .main-info {
@@ -88,22 +91,18 @@
     transition: 500ms;
 }
 
-.clicked>* {
-    transform: translateY(-500px);
-    transition: all 500ms;
-}
-.card-viewport>* {
+.clicked>div {
+    transform: translateY(-50%);
     transition: all 500ms;
 }
 
 .more-info-div{
     height: 50%;
-    transform: translateY(+500px);
     transition: 500ms;
+    background-color: rgb(226, 161, 64);
 
 }
 
 .clicked > .more-info-div{
-    transform: translateY(0);
     transition: 500ms;
 }

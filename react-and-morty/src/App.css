@@ -17,13 +17,16 @@ html, body {
 }
 
 #character-title{
+    position: absolute;
+    top: 330px;
     width: 100%;
     text-align: center;
-    font-size: 42px;
-    font-weight: 600;
+    font-size: 55px;
+    font-weight: 800;
     height: fit-content;
-    border-top: 1px solid rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(255, 255, 255);
+    color: white;
+    mix-blend-mode: overlay;
+    -webkit-text-stroke: 2px black;
 }
 
 #landing-image{

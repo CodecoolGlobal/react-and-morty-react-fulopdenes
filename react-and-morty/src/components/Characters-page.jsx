@@ -10,7 +10,7 @@ export default function Characters() {
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
     setPage(value);
-};
+  };
 
   const [charDataLoaded, setCharDataLoaded] = useState(false);
   const characters = useCharacters(page);
@@ -30,30 +30,32 @@ export default function Characters() {
         <p id="character-title">CHARACTERS</p>
         {charDataLoaded ? (
           <>
-          <div>
-            <Typography fontSize={32} align="center">
-                    Page: {page}
-            </Typography>
-          </div>
+            <div>
+              <Pagination
+                count={characters.info.pages}
+                page={page}
+                variant="outlined"
+                shape="rounded"
+                color="primary"
+                onChange={handleChange}
+              />
+            </div>
             <CharacterCards character={characters} />
             <Box
-                sx={{
-                    margin: "auto",
-                    width: "fit-content",
-                    alignItems: "center",
-                }}
+              sx={{
+                margin: "auto",
+                width: "fit-content",
+                alignItems: "center",
+              }}
             >
-                <Typography fontSize={32} align="center">
-                    Page: {page}
-               </Typography>
-                
-                <Pagination 
-                  count={characters.info.pages} 
-                  page={page}
-                  variant="outlined"
-                  shape="rounded"
-                  color="primary"
-                  onChange={handleChange} />
+              <Pagination
+                count={characters.info.pages}
+                page={page}
+                variant="outlined"
+                shape="rounded"
+                color="primary"
+                onChange={handleChange}
+              />
             </Box>
           </>
         ) : (

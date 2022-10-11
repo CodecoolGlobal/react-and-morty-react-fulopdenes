@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import "./pagination.css";
 
 import Box from "@mui/material/Box";
-import { Pagination, Typography } from "@mui/material";
+import { Pagination } from "@mui/material";
 
 export default function Characters() {
   const [page, setPage] = useState(1);
@@ -16,12 +16,12 @@ export default function Characters() {
   const [charDataLoaded, setCharDataLoaded] = useState(false);
   const characters = useCharacters(page);
 
-  console.log(characters);
   useEffect(() => {
     characters === "Loading..."
       ? setCharDataLoaded(false)
       : setCharDataLoaded(true);
   }, [characters]);
+
   return (
     <>
       <div className="character-page">
@@ -62,7 +62,9 @@ export default function Characters() {
             </Box>
           </>
         ) : (
-          console.log("false")
+          <>
+            <div>loading...</div>
+          </>
         )}
       </div>
     </>

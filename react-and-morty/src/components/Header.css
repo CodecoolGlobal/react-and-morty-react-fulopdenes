@@ -8,7 +8,7 @@
   position: absolute;
   display: grid;
   top: -30px;
-  left: 27%;
+  left: 30%;
   height: 325px;
   /* mix-blend-mode: overlay; */
   z-index: 3;
@@ -35,8 +35,8 @@
     left: -13%;
   }
   100% {
-    left: 110%;
     top: 250px;
+    left: 110%;
   }
 
   50% {

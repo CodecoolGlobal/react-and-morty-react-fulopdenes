@@ -25,7 +25,9 @@ function App() {
               path="characters"
               element={<Characters/>}
             />
-            <Route path="locations" element={<Locations />} />
+            <Route
+              path="locations"
+              element={<Locations />} />
           </Route>
         </Routes>
       </BrowserRouter>

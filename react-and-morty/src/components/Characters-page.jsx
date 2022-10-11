@@ -16,12 +16,12 @@ export default function Characters() {
   const [charDataLoaded, setCharDataLoaded] = useState(false);
   const characters = useCharacters(page);
 
-  console.log(characters);
   useEffect(() => {
     characters === "Loading..."
       ? setCharDataLoaded(false)
       : setCharDataLoaded(true);
   }, [characters]);
+  
   return (
     <>
       <div className="character-page">

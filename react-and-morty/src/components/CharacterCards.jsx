@@ -1,3 +1,5 @@
+import "./CharacterCards.css";
+
 export default function CharacterCards(props) {
   const character = props.character.results;
 

@@ -69,3 +69,7 @@
 .status-unknown{
     color: rgb(58, 57, 57);
 }
+
+.clicked>* {
+    transform: translateX(-100px);
+}

@@ -1,0 +1,48 @@
+h4 {
+    font-size: 2rem;
+    color: rgb(219 255 153);
+    margin: 0;
+    font-family: Bell MT;
+    text-align: center;
+    text-shadow: rgb(0 0 0) 0px 0px 2px;
+}
+
+
+h2 {
+    font-size: 4rem;
+    color:rgb(32 142 69);
+    margin: 0;
+    font-family: Bell MT;
+    text-align: center;
+    text-shadow:  rgb(0 0 0) 0px 0px 2px;
+}
+
+h1 {
+    margin: 0;
+    color: rgb(49, 155, 49);
+    font-size: 5rem;
+    font-family: Bell MT;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: rgb(0 0 0) 0px 0px 5px;
+}
+
+h5 {
+    color: rgb(255, 255, 255);
+    font-family: Bell MT;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: rgb(0 0 0) 0px 0px 5px;
+}
+
+.landing-page-welcome-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+

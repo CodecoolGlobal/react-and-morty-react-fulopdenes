@@ -1,4 +1,4 @@
-export default function CharacterCard(props) {
+export default function CharacterCards(props) {
   const character = props.character.results;
 
   if (character !== undefined) {

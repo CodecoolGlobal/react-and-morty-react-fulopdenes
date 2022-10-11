@@ -76,16 +76,19 @@
 }
 
 .status-alive{
+    margin-bottom: 7px;
     transition: 500ms;
 }
 
 .status-dead{
     color: rgb(95, 13, 13);
+    margin-bottom: 7px;
     transition: 500ms;
 }
 
 .status-unknown{
     color: rgb(58, 57, 57);
+    margin-bottom: 7px;
     transition: 500ms;
 }
 

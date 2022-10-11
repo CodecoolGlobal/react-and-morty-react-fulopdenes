@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import CharacterCards from "./CharacterCards";
 import { useCharacters } from "../api/useData";
 import { useState, useEffect } from "react";
-import "./pagination.css";
+import "./Pagination.css";
 
 import Box from "@mui/material/Box";
 import { Pagination, Typography } from "@mui/material";
@@ -21,7 +21,7 @@ export default function Characters() {
       ? setCharDataLoaded(false)
       : setCharDataLoaded(true);
   }, [characters]);
-  
+
   return (
     <>
       <div className="character-page">

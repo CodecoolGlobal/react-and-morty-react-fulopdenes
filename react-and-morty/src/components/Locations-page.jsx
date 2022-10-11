@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import LocationCards from "./LocationCards";
 import { useLocations } from "../api/useData";
 import { useState, useEffect } from "react";
-import "./pagination.css";
+import "./Pagination.css";
 
 import Box from "@mui/material/Box";
 import { Pagination, Typography } from "@mui/material";

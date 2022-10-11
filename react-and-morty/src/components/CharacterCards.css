@@ -81,7 +81,6 @@
 
 .status-dead{
     color: rgb(95, 13, 13);
-    text-decoration: line-through;
     transition: 500ms;
 }
 

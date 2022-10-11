@@ -33,7 +33,9 @@ const Card = (props) => {
                   : "status-alive"
             }
           >
-            {char.status}
+            {char.status === "Dead" ?
+            `${char.status} ☠`:
+            char.status}
           </div>
         </div>
         <div className="more-info-div">

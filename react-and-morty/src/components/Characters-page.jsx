@@ -3,9 +3,9 @@ import CharacterCards from "./CharacterCards";
 import { useCharacters } from "../api/useData";
 import { useState, useEffect } from "react";
 import "./Pagination.css";
-
 import Box from "@mui/material/Box";
 import { Pagination, Typography } from "@mui/material";
+import Header from "./Header";
 
 export default function Characters() {
   const [page, setPage] = useState(1);
@@ -24,6 +24,7 @@ export default function Characters() {
 
   return (
     <>
+      <Header />
       <div className="character-page">
         <Link to="/">
           <button className="go-back-button">⬅ BACK TO LANDING PAGE</button>

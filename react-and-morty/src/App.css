@@ -55,9 +55,11 @@ html, body {
 }
 
 .go-back-button{
-    
+    position: absolute;
+    top: 5px;
+    left: -38px;
     margin-top: 10px;
-    width: 100%;
+    width: 20%;
     font-size: 18px;
     background-color: rgba(255, 255, 255, 0);
     clip-path: polygon(
@@ -68,15 +70,13 @@ html, body {
         0 100%,
         0% 0.5em);
     font-weight: 700;
-    color: rgba(70, 130, 10, 0.769);
+    color: rgb(40,0,3);
     transition: all 500ms;
-    border-color: rgba(255, 255, 255, 0.726);
+    border-color: rgb(40,0,3);
 }
 
 .go-back-button:hover{
-    /* background-color: rgba(128, 255, 0, 0.441); */
-    /* background-color: rgba(82, 22, 137, 0.712); */
     transition: all 500ms;
-    /* color: rgba(240, 218, 97, 0.737); */
-    color: chartreuse
+    
+    left: 5px;
 }

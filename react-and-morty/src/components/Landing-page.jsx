@@ -5,18 +5,21 @@ export default function LandingPage() {
   return (
     <>
       <div className="landing-page">
-        <div id="char-text">CHARACTERS</div>
         <Link to="/characters">
           <img
             src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif"
             id="char-portal"
+            alt={"Character Portal"}
           ></img>
+          <div id="char-text">CHARACTERS</div>
         </Link>
         <Link to="/locations">
           <img
             src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif"
             id="loc-portal"
+            alt={"Location Portal"}
           ></img>
+          <div id="loc-text">LOCATIONS</div>
         </Link>
         <header className="landing-page-welcome-text-container">
           <h4 className="drop-shadow">WELCOME AT</h4>

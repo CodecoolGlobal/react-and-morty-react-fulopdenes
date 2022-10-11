@@ -102,3 +102,49 @@ html, body {
     height: 600px;
     width: 200px;
 }
+
+#char-text{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    position: absolute;
+    left: 170px;
+    bottom: 350px;
+    opacity: 0%;
+    transition: 1200ms;
+    transform: scaleX(10%);
+}
+
+#char-portal:hover + #char-text{
+    background: linear-gradient(
+            to right, rgba(251, 252, 249, 0.555), rgb(168,204,84),
+            rgb(92,174,74),  rgb(32,142,69));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    transform: translateX(270px) scaleX(100%);
+    opacity: 100%;
+    transition: 1200ms;
+}
+
+#loc-text{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    position: absolute;
+    right: 215px;
+    top: 325px;
+    opacity: 0%;
+    transition: 1200ms;
+    transform: scaleX(10%);
+}
+
+#loc-portal:hover + #loc-text{
+    background: linear-gradient(
+            to left, rgba(251, 252, 249, 0.555), rgb(168,204,84),
+            rgb(92,174,74),  rgb(32,142,69));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    transform: translateX(-270px) scaleX(100%);
+    opacity: 100%;
+    transition: 1200ms;
+}

@@ -1,15 +1,7 @@
-.character-Card {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(226, 161, 64);
-    border: 8px solid rgb(60, 7, 60);
+.card-viewport {
     border-radius: 1rem;
     width: 240px;
     height: 340px;
-    justify-content: space-around;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
     cursor: pointer;
     margin: 10px;
     margin-bottom: 17px;
@@ -19,7 +11,23 @@
     overflow: hidden;
 }
 
-.character-Card:hover{
+.character-card {
+    height: 200%;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 161, 64);
+    border: 8px solid rgb(60, 7, 60);
+    justify-content: space-around;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    height: 50%;
+}
+
+.card-viewport:hover{
     width: 250px;
     height: 350px;
     box-shadow: 5px 5px 15px 1px chartreuse;
@@ -36,7 +44,7 @@
 }
 
 .char-image{
-    width:inherit;
+    width: 100%;
     align-self: center;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -47,7 +55,7 @@
     transition: 500ms;
 }
 
-.character-Card:hover .char-image{
+.card-viewport:hover .char-image{
     width: 250px;
     border-radius: 1rem;
     transition: 500ms;
@@ -80,10 +88,14 @@
 
 .clicked>* {
     transform: translateY(-500px);
-    transition: 500ms;
+    transition: all 500ms;
+}
+.card-viewport>* {
+    transition: all 500ms;
 }
 
 .more-info-div{
+    height: 50%;
     transform: translateY(+500px);
     transition: 500ms;
 

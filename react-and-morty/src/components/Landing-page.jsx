@@ -5,16 +5,11 @@ export default function LandingPage() {
     <>
       <div className="landing-page">
             <div id="title-text">Morty look! A well designed welcome page!</div>
-        <img
-          src="https://images2.alphacoders.com/642/642540.png"
-          alt={"logo"}
-          id="landing-image"
-        ></img>
           <Link to="/characters">
-          <button id="char-button">CHARACTERS</button>
+            <img src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif" id="char-portal"></img>
           </Link>
           <Link to="/locations">
-          <button id="loc-button">LOCATIONS</button>
+          <img src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif" id="loc-portal"></img>
           </Link>
         <div> Lorem ipsum dolor sit amet </div>
       </div>

@@ -2,10 +2,18 @@ import { Link } from "react-router-dom";
 import CharacterCards from "./CharacterCards";
 import { useCharacters } from "../api/useData";
 import { useState, useEffect } from "react";
-import Pagination from "./Pagination";
+
+import Box from "@mui/material/Box";
+import { Pagination, Typography } from "@mui/material";
+
 export default function Characters() {
+  const [page, setPage] = useState(1);
+  const handleChange = (event, value) => {
+    setPage(value);
+};
+
   const [charDataLoaded, setCharDataLoaded] = useState(false);
-  const characters = useCharacters(1);
+  const characters = useCharacters(page);
 
   console.log(characters);
   useEffect(() => {
@@ -22,14 +30,36 @@ export default function Characters() {
         <p id="character-title">CHARACTERS</p>
         {charDataLoaded ? (
           <>
+          <div>
+            <Typography fontSize={32} align="center">
+                    Page: {page}
+            </Typography>
+          </div>
             <CharacterCards character={characters} />
-            <Pagination page={characters.info.pages} />
+            <Box
+                sx={{
+                    margin: "auto",
+                    width: "fit-content",
+                    alignItems: "center",
+                }}
+            >
+                <Typography fontSize={32} align="center">
+                    Page: {page}
+               </Typography>
+                
+                <Pagination 
+                  count={characters.info.pages} 
+                  page={page}
+                  variant="outlined"
+                  shape="rounded"
+                  color="primary"
+                  onChange={handleChange} />
+            </Box>
           </>
         ) : (
           console.log("false")
         )}
       </div>
-      {/*  */}
     </>
   );
 }

@@ -23,7 +23,7 @@ function App() {
             <Route index element={<LandingPage />} />
             <Route
               path="characters"
-              element={<Characters />}
+              element={<Characters/>}
             />
             <Route path="locations" element={<Locations />} />
           </Route>

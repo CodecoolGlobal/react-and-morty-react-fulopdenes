@@ -13,19 +13,29 @@
 }
 
 .headRed {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
   position: absolute;
   top: 7%;
   mix-blend-mode: normal;
-  animation: floating;
   left: 80%;
-
-  transform: rotate(-10deg) translate(-20%, 0);
+  transform: rotate(-20deg) translate(-20%, 0);
   width: auto;
   height: 250px;
   z-index: 4;
   transition: all 1s ease-in;
 }
 .headBlue {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  margin-top: 5px;
   position: absolute;
   top: 7%;
   mix-blend-mode: normal;
@@ -37,35 +47,62 @@
   transition: all 1s ease-in;
 }
 .headYellow {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  margin-top: 5px;
   position: absolute;
   top: 15%;
   mix-blend-mode: normal;
   height: 200px;
   width: auto;
   left: 20%;
-  transform: rotate(10deg) translate(-20%, 0);
+
   z-index: 2;
   transition: all 1s ease-in;
 }
 .headGreen {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  margin-top: 5px;
   position: absolute;
   top: 10%;
   mix-blend-mode: normal;
   left: 90%;
   height: 100px;
-  transform: rotate(-15deg) translate(-20%, 0);
+
   width: auto;
   z-index: 2;
   transition: all 1s ease-in;
 }
 .headFront {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
   position: absolute;
   top: 2%;
   mix-blend-mode: normal;
   right: 42%;
 
-  transform: translate(-50%, 0);
   width: auto;
   z-index: 2;
   transition: all 1s ease-in;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }

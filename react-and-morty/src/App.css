@@ -10,34 +10,3 @@ body {
   color: chartreuse;
   overflow-x: hidden;
 }
-
-.go-back-button{
-  position: absolute;
-  top: 5px;
-  left: -8.8%;
-  margin-top: 10px;
-  width: 20%;
-  font-size: 18px;
-  background-color: rgba(255, 255, 255, 0);
-  clip-path: polygon(
-      0.5em 0%,
-      100% 0,
-      100% calc(100% - 0.5em),
-      calc(100% - 0.5em) 100%,
-      0 100%,
-      0% 0.5em);
-  font-weight: 700;
-  color: black;
-  border-color: black;
-  mix-blend-mode: overlay;
-  cursor: pointer;
-  transition: all 500ms;
-}
-
-.go-back-button:hover{
-  mix-blend-mode: normal;
-  color: rgb(40,0,3); 
-  border-color: rgb(40,0,3);
-  left: 5px;
-  transition: all 500ms;
-}

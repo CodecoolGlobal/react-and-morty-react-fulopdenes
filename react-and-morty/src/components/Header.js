@@ -1,12 +1,18 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import "./Header.css";
 import headerImage from "../images/Header.png";
 import sunImage from "../images/sun gif.gif";
 import sunDown from "../images/down sun.gif";
 import rickAndMortyLogo from "../images/Rick-and-Morty.png";
+
 export default function Header() {
   return (
     <div className="header">
+      <Link to="/">
+          <button className="go-back-button">⬅ BACK TO LANDING PAGE</button>
+      </Link>
+      <p id="character-title">CHARACTERS</p>
       <img
         alt="rick and morty logo"
         className="logo-image"

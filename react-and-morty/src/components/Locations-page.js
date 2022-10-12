@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 import { Pagination } from "@mui/material";
 import Box from "@mui/material/Box";
 import Header from "./Header";
-import "./Pagination.css";
-import "./Location-page.css"
+import "./pagination.css";
+import "./Location-page.css";
 
 export default function Locations() {
   const [page, setPage] = useState(1);

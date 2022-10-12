@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import { Pagination } from "@mui/material";
 import Header from "./Header";
-import "./Pagination.css";
+import "./pagination.css";
 import "./Characters-page.css";
 
 export default function Characters() {

@@ -8,7 +8,7 @@ const Card = (props) => {
   return (
     <div
       onClick={() => setIsClicked(!isClicked)}
-      className={isClicked ? "card-viewport clicked" : "card-viewport"}
+      className={isClicked ? "char-card-viewport clicked" : "char-card-viewport"}
     >
       <div className="character-card">
         <div className="main-info">
@@ -58,11 +58,11 @@ export default function CharacterCards(props) {
 
   if (character !== undefined) {
     return (
-      <>
+      <div className="char-cards">
         {character.map((char) => (
           <Card key={char.id} char={char} />
         ))}
-      </>
+      </div>
     );
   }
 }

@@ -115,3 +115,29 @@ h2 {
         font-size: 6vw;
     }
 }
+
+.page-info{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    bottom: 1%;
+    right: 10px;
+}
+.mrPB-1{
+    width: 1.5%;
+    cursor: pointer;
+}
+
+.mrPB-2{
+    width: 2.3%;
+    cursor: pointer;
+}
+
+.mrPB-1-clicked{
+    font-family: 'Schoolbell', cursive;
+    color: white;
+    padding-right: 15px;
+}

@@ -22,7 +22,7 @@ const Card = (props) => {
   const loc = props.loc;
   return (
     <div
-      role={"show-more-data"}
+      role={"button"}
       onClick={() => setIsClicked(!isClicked)}
       className={
         isClicked ? "location-card-viewport clicked" : "location-card-viewport"

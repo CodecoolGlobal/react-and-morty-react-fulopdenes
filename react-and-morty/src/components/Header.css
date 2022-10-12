@@ -60,6 +60,7 @@ a:hover .sun-image {
   100% {
     left: 105%;
     top: 200px;
+    transform: translate(0, -100px), scale(2);
   }
 
   50% {

@@ -4,13 +4,11 @@
 }
 
 .logo-image {
-  align-self: center;
   position: absolute;
-  display: grid;
-  top: -30px;
-  left: 30%;
-  height: 325px;
-  /* mix-blend-mode: overlay; */
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 180px;
   z-index: 3;
 }
 

@@ -35,6 +35,21 @@ export default function Locations() {
         {locDataLoaded ? (
           <>
             <div className="pagination">
+            <Box
+              sx={{
+                margin: "auto",
+                width: "fit-content",
+                alignItems: "center",
+                bgcolor: "rgba(0, 0, 0, 0.256)",
+                borderRadius: "2rem",
+                transition: "500ms",
+                '&:hover': {
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  transition: "500ms"
+                },
+              }}
+            >
+              <div className="pagination">
               <Pagination
                 count={locations.info.pages}
                 page={page}
@@ -42,7 +57,11 @@ export default function Locations() {
                 shape="rounded"
                 color="primary"
                 onChange={handleChange}
+                showFirstButton={true}
+                showLastButton={true}
               />
+              </div>
+            </Box>
             </div>
             <LocationCards location={locations} />
             <Box
@@ -50,17 +69,26 @@ export default function Locations() {
                 margin: "auto",
                 width: "fit-content",
                 alignItems: "center",
+                bgcolor: "rgba(0, 0, 0, 0.256)",
+                borderRadius: "2rem",
+                transition: "500ms",
+                '&:hover': {
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  transition: "500ms"
+                },
               }}
             >
               <div className="pagination">
-                <Pagination
-                  count={locations.info.pages}
-                  page={page}
-                  variant="outlined"
-                  shape="rounded"
-                  color="primary"
-                  onChange={handleChange}
-                />
+              <Pagination
+                count={locations.info.pages}
+                page={page}
+                variant="outlined"
+                shape="rounded"
+                color="primary"
+                onChange={handleChange}
+                showFirstButton={true}
+                showLastButton={true}
+              />
               </div>
             </Box>
           </>

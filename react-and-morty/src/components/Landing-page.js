@@ -54,9 +54,9 @@ export default function LandingPage() {
             "Here you can find information about the different characters and locations so far in the show."
             }</div>
           <img
-          src={infoImage}
           className={infoImage === mrPB1 ?
                       "mrPB-1" : "mrPB-2"}
+          src={infoImage}
           onClick={handleInfo}></img>
         </div>
       </div>

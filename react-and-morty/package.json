@@ -40,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "bs-dom-testing-library": "^0.7.0",
+    "bs-react-testing-library": "^0.8.0"
   }
 }

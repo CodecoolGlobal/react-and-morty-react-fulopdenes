@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import LocationCards from "./LocationCards";
 import { useLocations } from "../api/useData";
 import { useState, useEffect } from "react";
-import "./Pagination.css";
-import Box from "@mui/material/Box";
 import { Pagination } from "@mui/material";
+import Box from "@mui/material/Box";
+import Header from "./Header";
+import "./Pagination.css";
+import "./Location-page.css"
 
 export default function Locations() {
   const [page, setPage] = useState(1);
@@ -23,9 +25,10 @@ export default function Locations() {
 
   return (
     <>
+      <Header />
       <div className="location-page">
         <Link to="/">
-          <button>⬅BACK TO LANDING PAGE</button>
+          <button className="go-back-button">⬅BACK TO LANDING PAGE</button>
         </Link>
         <p id="location-title">LOCATIONS</p>
         {locDataLoaded ? (

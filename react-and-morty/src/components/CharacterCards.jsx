@@ -8,7 +8,7 @@ const Card = (props) => {
   return (
     <div
       onClick={() => setIsClicked(!isClicked)}
-      className={isClicked ? "card-viewport clicked" : "card-viewport"}
+      className={isClicked ? "char-card-viewport clicked" : "char-card-viewport"}
     >
       <div className="character-card">
         <div className="main-info">
@@ -25,26 +25,15 @@ const Card = (props) => {
             alt={char.name}
           ></img>
           <div
-            className={
-              char.status === "Dead"
-                ? "status-dead"
-                : char.status === "unknown"
-                ? "status-unknown"
-                : "status-alive"
-            }
+            className="char-species"
           >
-            <i>
-              <sup>
-                <small>state:</small>
-              </sup>
-            </i>
-            {char.status === "Dead" ? `${char.status} ☠` : char.status}
+            {char.species}
           </div>
         </div>
         <div className="more-info-div">
           <div>
-            <div className="label">species:</div>
-            <div>{char.species}</div>
+            <div className="label">state:</div>
+            <div>{char.status}</div>
           </div>
           <div>
             <div className="label">gender:</div>
@@ -69,11 +58,11 @@ export default function CharacterCards(props) {
 
   if (character !== undefined) {
     return (
-      <>
+      <div className="char-cards">
         {character.map((char) => (
           <Card key={char.id} char={char} />
         ))}
-      </>
+      </div>
     );
   }
 }

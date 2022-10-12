@@ -25,26 +25,15 @@ const Card = (props) => {
             alt={char.name}
           ></img>
           <div
-            className={
-              char.status === "Dead"
-                ? "status-dead"
-                : char.status === "unknown"
-                ? "status-unknown"
-                : "status-alive"
-            }
+            className="char-species"
           >
-            <i>
-              <sup>
-                <small>state:</small>
-              </sup>
-            </i>
-            {char.status === "Dead" ? `${char.status} ☠` : char.status}
+            {char.species}
           </div>
         </div>
         <div className="more-info-div">
           <div>
-            <div className="label">species:</div>
-            <div>{char.species}</div>
+            <div className="label">state:</div>
+            <div>{char.status}</div>
           </div>
           <div>
             <div className="label">gender:</div>

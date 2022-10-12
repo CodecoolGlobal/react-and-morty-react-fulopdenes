@@ -9,6 +9,7 @@ const residentsArrayToIconDivs = residentLink => {
   src={urlToImg}
   className="resident-image"
   alt={"resident no. " + residentID}
+  key={residentID}
   ></img>
 }
 
@@ -21,7 +22,7 @@ const Card = (props) => {
       className={
         isClicked ? "location-card-viewport clicked" : "location-card-viewport"
       }
-      key={loc.id}
+      
     >
       <div className="location-card">
         <div className="loc-main-info">
@@ -42,7 +43,7 @@ const Card = (props) => {
           <div>
             <div className="label">{loc.name}'s residents:</div>
             <div className="residents-box">
-              {loc.residents.map(residentsArrayToIconDivs)}
+              {isClicked ? loc.residents.map(residentsArrayToIconDivs) : <></>}
             </div>
           </div>
           :
@@ -63,7 +64,7 @@ export default function LocationCards(props) {
     return (
       <div className="loc-cards">
         {location.map((loc) => (
-          <Card loc={loc} />
+          <Card loc={loc} key={loc.id}/>
         ))}
       </div>
     );

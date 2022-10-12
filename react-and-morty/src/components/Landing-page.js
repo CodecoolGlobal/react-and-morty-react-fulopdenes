@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import "./Landing-page.css";
-import "./Pagination.css";
+import "./pagination.css";
 
 export default function LandingPage() {
   return (

@@ -1,41 +1,41 @@
 import { Link } from "react-router-dom";
-import CharacterCards from "./CharacterCards";
-import { useCharacters } from "../api/useData";
+import LocationCards from "./LocationCards";
+import { useLocations } from "../api/useData";
 import { useState, useEffect } from "react";
-import Box from "@mui/material/Box";
 import { Pagination } from "@mui/material";
+import Box from "@mui/material/Box";
 import Header from "./Header";
-import "./Pagination.css";
-import "./Characters-page.css";
+import "./pagination.css";
+import "./Location-page.css";
 
-export default function Characters() {
+export default function Locations() {
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
     setPage(value);
   };
 
-  const [charDataLoaded, setCharDataLoaded] = useState(false);
-  const characters = useCharacters(page);
+  const [locDataLoaded, setLocDataLoaded] = useState(false);
+  const locations = useLocations(page);
 
   useEffect(() => {
-    characters === "Loading..."
-      ? setCharDataLoaded(false)
-      : setCharDataLoaded(true);
-  }, [characters]);
+    locations === "Loading..."
+      ? setLocDataLoaded(false)
+      : setLocDataLoaded(true);
+  }, [locations]);
 
   return (
     <>
       <Header />
-      <div className="character-page">
+      <div className="location-page">
         <Link to="/">
-          <button className="go-back-button">⬅ BACK TO LANDING PAGE</button>
+          <button className="go-back-button">⬅BACK TO LANDING PAGE</button>
         </Link>
-        <p id="character-title">CHARACTERS</p>
-        {charDataLoaded ? (
+        <p id="location-title">LOCATIONS</p>
+        {locDataLoaded ? (
           <>
             <div className="pagination">
               <Pagination
-                count={characters.info.pages}
+                count={locations.info.pages}
                 page={page}
                 variant="outlined"
                 shape="rounded"
@@ -43,7 +43,7 @@ export default function Characters() {
                 onChange={handleChange}
               />
             </div>
-            <CharacterCards character={characters} />
+            <LocationCards location={locations} />
             <Box
               sx={{
                 margin: "auto",
@@ -53,7 +53,7 @@ export default function Characters() {
             >
               <div className="pagination">
                 <Pagination
-                  count={characters.info.pages}
+                  count={locations.info.pages}
                   page={page}
                   variant="outlined"
                   shape="rounded"
@@ -64,9 +64,7 @@ export default function Characters() {
             </Box>
           </>
         ) : (
-          <>
-            <div>loading...</div>
-          </>
+          console.log("false")
         )}
       </div>
     </>

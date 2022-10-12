@@ -3,7 +3,7 @@
 h4 {
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-shadow: red 0px 0px 5px;
     margin: 0;
 }
@@ -11,7 +11,7 @@ h4 {
 h2 {
     font-family: 'Schoolbell', cursive;
     letter-spacing: 0.7rem;
-    font-size: 4rem;
+    font-size: 6vw;
     color: white;
     margin: 0;
     text-align: center;
@@ -21,7 +21,8 @@ h2 {
 }
 
 .landing-logo-image {
-    height: 10rem;
+    height: 27vw;
+    max-height: 10rem;
     color: rgb(49, 155, 49);
     font-size: 5rem;
     font-weight: bolder;
@@ -37,14 +38,14 @@ h2 {
     margin-bottom: 4rem;
 }
 
-#landing-image{
+#landing-image {
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 0;
 }
 
-.landing-page{
+.landing-page {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -61,24 +62,48 @@ h2 {
 
 .portal>img {
     object-fit: fill;
-    height: 200px;
-    width: 400px;
+    max-height: 200px;
+    max-width: 400px;
+    height: 40vw;
+    width: 80vw;
 }
 
-#char-text{
+.portal-text {
     font-family: 'Schoolbell', cursive;
     letter-spacing: 0.7rem;
     font-size: 25px;
     font-weight: 1000;
-    color:rgb(255, 255, 255);
-    text-shadow: rgb(0 0 0) 0px 10px 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px #000, 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
+
+    animation-name: hoveringText;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
-#loc-text{
-    font-family: 'Schoolbell', cursive;
-    letter-spacing: 0.7rem;
-    font-size: 25px;
-    font-weight: 1000;
-    color:rgb(255, 255, 255);
-    text-shadow: rgb(0 0 0) 0px 10px 10px;
+@keyframes hoveringText {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: translateY(+10%);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .landing-page {
+        flex-direction: column;
+        margin-bottom: 45rem;
+        gap: 4rem;
+    }
+
+    .portal-text {
+        font-size: 6vw;
+    }
 }

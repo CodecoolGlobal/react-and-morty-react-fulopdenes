@@ -51,7 +51,7 @@ const Card = (props) => {
             <div>{char.gender}</div>
           </div>
           <div>
-            <div className="label">Last known address:</div>
+            <div className="label">last seen:</div>
             <div>{char.location.name}</div>
           </div>
           <div>

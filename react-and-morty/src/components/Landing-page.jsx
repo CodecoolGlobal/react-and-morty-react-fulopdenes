@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import "./Landing-page.css";
+import "./Pagination.css";
 
 export default function LandingPage() {
   return (
@@ -22,12 +23,11 @@ export default function LandingPage() {
           <div id="loc-text">LOCATIONS</div>
         </Link>
         <header className="landing-page-welcome-text-container">
-          <h4 className="drop-shadow">WELCOME AT</h4>
+          <h4 className="drop-shadow">WELCOME TO THE</h4>
           <h1 className="drop-shadow">RICK AND MORTY</h1>
           <h2 className="drop-shadow">WEBCATALOG</h2>
           <h5>
-            YOU CAN FIND MORE DETAILS ABOUT LOCATIONS AND CHARACTERS. PLEASE
-            SELECT A PORTAL …
+            PLEASE ENTER A PORTAL TO FIND MORE INFO ABOUT...
           </h5>
         </header>
       </div>

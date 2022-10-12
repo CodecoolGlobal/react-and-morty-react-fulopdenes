@@ -9,10 +9,8 @@ import { useState } from "react";
 
 export default function LandingPage() {
 
-  const [showInfo, setShowInfo] = useState(false) 
   const [infoImage, setInfoImage] = useState(mrPB1)
   const handleInfo = () => {
-    setShowInfo(!showInfo);
     infoImage === mrPB1 ?
     setInfoImage(mrPB2) :
     setInfoImage(mrPB1)

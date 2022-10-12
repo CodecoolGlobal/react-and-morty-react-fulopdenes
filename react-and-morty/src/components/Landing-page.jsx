@@ -26,9 +26,7 @@ export default function LandingPage() {
           <h4 className="drop-shadow">WELCOME TO THE</h4>
           <h1 className="drop-shadow">RICK AND MORTY</h1>
           <h2 className="drop-shadow">WEBCATALOG</h2>
-          <h5>
-            PLEASE ENTER A PORTAL TO FIND MORE INFO ABOUT...
-          </h5>
+          <h5>PLEASE ENTER A PORTAL TO FIND MORE INFO ABOUT THE...</h5>
         </header>
       </div>
       <Outlet />

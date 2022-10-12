@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import CharacterCards from "./CharacterCards";
 import { useCharacters } from "../api/useData";
 import { useState, useEffect } from "react";
@@ -28,10 +27,7 @@ export default function Characters() {
     <>
       <Header />
       <div className="character-page">
-        <Link to="/">
-          <button className="go-back-button">⬅ BACK TO LANDING PAGE</button>
-        </Link>
-        <p id="character-title">CHARACTERS</p>
+        
         {charDataLoaded ? (
           <>
             <div className="pagination">

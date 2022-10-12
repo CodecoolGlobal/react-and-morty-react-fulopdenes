@@ -11,7 +11,7 @@ export default function Characters() {
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
     setPage(value);
-    window.scrollTo({ top: 500, behavior: 'smooth' })
+    window.scrollTo({ top: 350, behavior: "smooth" });
   };
 
   const [charDataLoaded, setCharDataLoaded] = useState(false);
@@ -27,7 +27,6 @@ export default function Characters() {
     <>
       <Header />
       <div className="character-page">
-        
         {charDataLoaded ? (
           <>
             <div className="pagination">

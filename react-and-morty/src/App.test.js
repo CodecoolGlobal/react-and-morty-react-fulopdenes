@@ -1,5 +1,5 @@
 import React from "react";
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import App from "./App";
 import CharacterCards from "./components/CharacterCards";
 import LocationCards from "./components/LocationCards";
@@ -40,9 +40,9 @@ test("BY CLICKING AT CHARACTERCARD IN LIST, MORE INFO SHOW UP", () => {
     />
   );
 
-  fireEvent.click(screen.getByRole("show-more-data"));
+  fireEvent.click(screen.getByRole("button"));
 
-  expect(screen.getByRole("show-more-data").className).toBe(
+  expect(screen.getByRole("button").className).toBe(
     "char-card-viewport clicked"
   );
 });
@@ -66,9 +66,9 @@ test("BY CLICKING AT LOCATIONCARD IN LIST, MORE INFO SHOW UP", () => {
     />
   );
 
-  fireEvent.click(screen.getByRole("show-more-data"));
+  fireEvent.click(screen.getByRole("button"));
 
-  expect(screen.getByRole("show-more-data").className).toBe(
+  expect(screen.getByRole("button").className).toBe(
     "location-card-viewport clicked"
   );
 });

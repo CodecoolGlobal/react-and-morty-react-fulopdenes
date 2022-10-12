@@ -13,5 +13,10 @@ npm install @emotion/styled @mui/lab @mui/icons-material
 
 # before testing modul:
 
-npm install --save-dev bs-dom-testing-library
 npm install --save-dev bs-react-testing-library
+
+# For End-to-end tests:
+
+npm install cypress -D
+
+npm install @testing-library/cypress --save-dev

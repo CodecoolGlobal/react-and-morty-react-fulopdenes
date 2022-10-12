@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./CharacterCards.css";
 
 const Card = (props) => {
@@ -7,7 +7,7 @@ const Card = (props) => {
 
   return (
     <div
-      role={"show-more-data"}
+      role={"button"}
       onClick={() => setIsClicked(!isClicked)}
       className={
         isClicked ? "char-card-viewport clicked" : "char-card-viewport"

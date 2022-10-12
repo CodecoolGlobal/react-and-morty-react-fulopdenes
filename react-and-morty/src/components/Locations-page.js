@@ -4,7 +4,6 @@ import { useLocations } from "../api/useData";
 import { useState, useEffect } from "react";
 import { Pagination } from "@mui/material";
 import Box from "@mui/material/Box";
-import Header from "./Header";
 import "./pagination.css";
 import "./Location-page.css";
 import LocationHeader from "./LocationHeader";
@@ -13,7 +12,7 @@ export default function Locations() {
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
     setPage(value);
-    window.scrollTo({ top: 500, behavior: 'smooth' })
+    window.scrollTo({ top: 350, behavior: "smooth" });
   };
 
   const [locDataLoaded, setLocDataLoaded] = useState(false);

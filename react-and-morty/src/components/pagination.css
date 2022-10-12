@@ -1,10 +1,10 @@
 .pagination {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 7px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 7px;
 }
 
 .MuiPaginationItem-ellipsis {
-    color: white !important;
+  color: white !important;
 }

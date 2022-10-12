@@ -1,0 +1,46 @@
+.header-image {
+  width: 100%;
+  box-shadow: 0px 5px 15px 1px rgb(45, 6, 9);
+}
+
+.logo-image {
+  align-self: center;
+  position: absolute;
+  display: grid;
+  top: -30px;
+  left: 30%;
+  height: 325px;
+  /* mix-blend-mode: overlay; */
+  z-index: 3;
+}
+
+.sun-image {
+  position: absolute;
+  top: 170px;
+
+  animation: floating, shake 0.5s;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  height: 100px;
+  width: auto;
+  z-index: 2;
+
+  transform: scale(2);
+}
+
+@keyframes floating {
+  0% {
+    top: 170px;
+    left: -13%;
+  }
+  100% {
+    top: 250px;
+    left: 110%;
+  }
+
+  50% {
+    top: px;
+    transform: translate(0, -200px);
+  }
+}

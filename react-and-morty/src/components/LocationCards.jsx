@@ -18,7 +18,9 @@ const Card = (props) => {
   return (
     <div
       onClick={() => setIsClicked(!isClicked)}
-      className={isClicked ? "location-card-viewport clicked" : "location-card-viewport"}
+      className={
+        isClicked ? "location-card-viewport clicked" : "location-card-viewport"
+      }
       key={loc.id}
     >
       <div className="location-card">

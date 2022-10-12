@@ -1,33 +1,64 @@
 import { Outlet, Link } from "react-router-dom";
 import "./Landing-page.css";
 import "./pagination.css";
+import rickAndMortyLogo from "../images/Rick-and-Morty.png";
+import portalGif from "../images/portal.gif";
+import mrPB1 from "../images/mrPoopyButthole1.png"
+import mrPB2 from "../images/mrPoopyButthole2.png"
+import { useState } from "react";
 
 export default function LandingPage() {
+
+  const [infoImage, setInfoImage] = useState(mrPB1)
+  const handleInfo = () => {
+    infoImage === mrPB1 ?
+    setInfoImage(mrPB2) :
+    setInfoImage(mrPB1)
+  }
+
   return (
     <>
       <div className="landing-page">
-        <Link to="/characters">
-          <img
-            src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif"
-            id="char-portal"
-            alt={"Character Portal"}
-          ></img>
-          <div id="char-text">CHARACTERS</div>
-        </Link>
-        <Link to="/locations">
-          <img
-            src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif"
-            id="loc-portal"
-            alt={"Location Portal"}
-          ></img>
-          <div id="loc-text">LOCATIONS</div>
-        </Link>
         <header className="landing-page-welcome-text-container">
-          <h4 className="drop-shadow">WELCOME TO THE</h4>
-          <h1 className="drop-shadow">RICK AND MORTY</h1>
-          <h2 className="drop-shadow">WEBCATALOG</h2>
-          <h5>PLEASE ENTER A PORTAL TO FIND MORE INFO ABOUT THE...</h5>
+          <img
+            alt="rick and morty logo"
+            className="landing-logo-image"
+            src={rickAndMortyLogo}
+          ></img>
+          <h2>Webcatalog</h2>
         </header>
+        <Link to="/characters" style={{ textDecoration: "none" }}>
+          <div className="portal">
+            <div className="portal-text">CHARACTERS</div>
+            <img
+              src={portalGif}
+              id="char-portal"
+              alt={"Character Portal"}
+            ></img>
+          </div>
+        </Link>
+        <Link to="/locations" style={{ textDecoration: "none" }}>
+          <div className="portal">
+            <div className="portal-text">LOCATIONS</div>
+            <img
+              src={portalGif}
+              id="loc-portal"
+              alt={"Location Portal"}
+            ></img>
+          </div>
+        </Link>
+        <div className="page-info">
+          <div className="mrPB-1-clicked">
+            {infoImage === mrPB1 ?
+            "click on me to know more, ooh wee" :
+            "Here you can find information about the different characters and locations so far in the show."
+            }</div>
+          <img
+          src={infoImage}
+          className={infoImage === mrPB1 ?
+                      "mrPB-1" : "mrPB-2"}
+          onClick={handleInfo}></img>
+        </div>
       </div>
       <Outlet />
     </>

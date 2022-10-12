@@ -8,8 +8,8 @@
 .char-card-viewport {
     width: 240px;
     height: 340px;
-    /* border: 1px solid white; */
-    border: 10px solid transparent;
+    border: 1px solid white;
+    /* border: 10px solid transparent; */
     box-shadow: 0 0 5px 2px green;
     border-radius: 1rem;
     color: black;

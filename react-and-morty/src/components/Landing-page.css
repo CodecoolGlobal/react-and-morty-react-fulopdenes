@@ -28,6 +28,7 @@ h2 {
     font-weight: bolder;
     text-align: center;
     text-shadow: rgb(0 0 0) 0px 0px 5px;
+    margin-top: 15px;
 }
 
 .landing-page-welcome-text-container {
@@ -58,6 +59,13 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    filter: brightness(100%);
+    transition: 500ms;
+}
+
+.portal:hover{
+    filter: brightness(125%);
+    transition: 500ms;
 }
 
 .portal>img {

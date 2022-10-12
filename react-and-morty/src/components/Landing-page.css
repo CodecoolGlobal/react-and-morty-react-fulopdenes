@@ -27,6 +27,7 @@ h2 {
     font-weight: bolder;
     text-align: center;
     text-shadow: rgb(0 0 0) 0px 0px 5px;
+    margin-top: 15px;
 }
 
 .landing-page-welcome-text-container {
@@ -35,13 +36,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
-}
-
-#landing-image{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 0;
 }
 
 .landing-page{
@@ -57,6 +51,13 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    filter: brightness(100%);
+    transition: 500ms;
+}
+
+.portal:hover{
+    filter: brightness(125%);
+    transition: 500ms;
 }
 
 .portal>img {
@@ -81,4 +82,30 @@ h2 {
     font-weight: 1000;
     color:rgb(255, 255, 255);
     text-shadow: rgb(0 0 0) 0px 10px 10px;
+}
+
+.page-info{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    bottom: 1%;
+    right: 10px;
+}
+.mrPB-1{
+    width: 1.5%;
+    cursor: pointer;
+}
+
+.mrPB-2{
+    width: 2.3%;
+    cursor: pointer;
+}
+
+.mrPB-1-clicked{
+    font-family: 'Schoolbell', cursive;
+    color: white;
+    padding-right: 15px;
 }

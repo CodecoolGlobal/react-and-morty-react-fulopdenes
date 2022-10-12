@@ -1,41 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Schoolbell&display=swap');
+
 h4 {
+    font-family: 'Pacifico', cursive;
     font-size: 2rem;
-    color: rgb(219 255 153);
+    color:rgb(255, 255, 255);
+    text-shadow: red 0px 0px 5px;
     margin: 0;
-    /* font-family: Bell MT; */
-    text-align: center;
-    text-shadow: rgb(0 0 0) 0px 0px 2px;
 }
 
 h2 {
+    font-family: 'Schoolbell', cursive;
+    letter-spacing: 0.7rem;
     font-size: 4rem;
-    color:rgb(32 142 69);
+    color: white;
     margin: 0;
-    /* font-family: Bell MT; */
     text-align: center;
-    text-shadow:  rgb(0 0 0) 0px 0px 2px;
+    -webkit-text-stroke: 0.1px black;
+
+    /* text-shadow:  rgb(0 0 0) 0px 0px 2px; */
 }
 
-h1 {
-    margin: 0;
+.landing-logo-image {
+    height: 10rem;
     color: rgb(49, 155, 49);
     font-size: 5rem;
-    /* font-family: Bell MT; */
     font-weight: bolder;
     text-align: center;
     text-shadow: rgb(0 0 0) 0px 0px 5px;
-}
-
-h5 {
-    color:rgb(255, 255, 255);
-    width: 30%;
-    /* font-family: Bell MT; */
-    font-weight: 1000;
-    font-size: 24px;
-    padding-right: 40px;
-    text-align: center;
-    text-shadow: rgb(0 0 0) 0px 0px 5px;
-    -webkit-text-stroke: 0.5px rgb(47, 201, 98);
 }
 
 .landing-page-welcome-text-container {
@@ -43,6 +34,7 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 #landing-image{
@@ -54,75 +46,39 @@ h5 {
 
 .landing-page{
     margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#char-portal{
-    position: absolute;
-    left: 250px;
-    bottom: 100px;
-    height: 600px;
-    width: 200px;
+.portal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#loc-portal{
-    position: absolute;
-    right: 300px;
-    top: 35px;
-    height: 600px;
-    width: 200px;
+.portal>img {
+    object-fit: fill;
+    height: 200px;
+    width: 400px;
 }
 
 #char-text{
-    background: linear-gradient(
-            to right, rgba(251, 252, 249, 0.555), rgb(168,204,84),
-            rgb(92,174,74),  rgb(32,142,69));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    font-size: 60px;
-    font-weight: 700;
-    position: absolute;
-    left: 170px;
-    bottom: 350px;
-    opacity: 0%;
-    transition: 1200ms;
-    transform: scaleX(10%);
-}
-
-#char-portal:hover + #char-text{
-    background: linear-gradient(
-            to right, rgba(251, 252, 249, 0.555), rgb(168,204,84),
-            rgb(92,174,74),  rgb(32,142,69));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    transform: translateX(270px) scaleX(100%);
-    opacity: 100%;
-    transition: 1200ms;
+    font-family: 'Schoolbell', cursive;
+    letter-spacing: 0.7rem;
+    font-size: 25px;
+    font-weight: 1000;
+    color:rgb(255, 255, 255);
+    text-shadow: rgb(0 0 0) 0px 10px 10px;
 }
 
 #loc-text{
-    background: linear-gradient(
-            to left, rgba(251, 252, 249, 0.555), rgb(168,204,84),
-            rgb(92,174,74),  rgb(32,142,69));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    font-size: 60px;
-    font-weight: 700;
-    position: absolute;
-    /* font-family: Bell MT; */
-    right: 215px;
-    top: 325px;
-    opacity: 0%;
-    transition: 1200ms;
-    transform: scaleX(10%);
-}
-
-#loc-portal:hover + #loc-text{
-    background: linear-gradient(
-            to left, rgba(251, 252, 249, 0.555), rgb(168,204,84),
-            rgb(92,174,74),  rgb(32,142,69));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    transform: translateX(-270px) scaleX(100%);
-    opacity: 100%;
-    transition: 1200ms;
+    font-family: 'Schoolbell', cursive;
+    letter-spacing: 0.7rem;
+    font-size: 25px;
+    font-weight: 1000;
+    color:rgb(255, 255, 255);
+    text-shadow: rgb(0 0 0) 0px 10px 10px;
 }

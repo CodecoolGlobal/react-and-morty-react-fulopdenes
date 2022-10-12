@@ -1,0 +1,71 @@
+.header-image {
+  width: 100%;
+  box-shadow: 0px 5px 15px 1px rgb(45, 6, 9);
+}
+
+.logo-image {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 180px;
+  z-index: 3;
+}
+
+.headRed {
+  position: absolute;
+  top: 7%;
+  mix-blend-mode: normal;
+  animation: floating;
+  left: 80%;
+
+  transform: rotate(-10deg) translate(-20%, 0);
+  width: auto;
+  height: 250px;
+  z-index: 4;
+  transition: all 1s ease-in;
+}
+.headBlue {
+  position: absolute;
+  top: 7%;
+  mix-blend-mode: normal;
+  left: 10%;
+  height: 125px;
+  transform: rotate(10deg) translate(-10%, 0);
+  width: auto;
+  z-index: 2;
+  transition: all 1s ease-in;
+}
+.headYellow {
+  position: absolute;
+  top: 15%;
+  mix-blend-mode: normal;
+  height: 200px;
+  width: auto;
+  left: 20%;
+  transform: rotate(10deg) translate(-20%, 0);
+  z-index: 2;
+  transition: all 1s ease-in;
+}
+.headGreen {
+  position: absolute;
+  top: 10%;
+  mix-blend-mode: normal;
+  left: 90%;
+  height: 100px;
+  transform: rotate(-15deg) translate(-20%, 0);
+  width: auto;
+  z-index: 2;
+  transition: all 1s ease-in;
+}
+.headFront {
+  position: absolute;
+  top: 2%;
+  mix-blend-mode: normal;
+  right: 42%;
+
+  transform: translate(-50%, 0);
+  width: auto;
+  z-index: 2;
+  transition: all 1s ease-in;
+}

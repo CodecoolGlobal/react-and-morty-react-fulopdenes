@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Header from "./Header";
 import "./pagination.css";
 import "./Location-page.css";
+import LocationHeader from "./LocationHeader";
 
 export default function Locations() {
   const [page, setPage] = useState(1);
@@ -25,7 +26,7 @@ export default function Locations() {
 
   return (
     <>
-      <Header />
+      <LocationHeader />
       <div className="location-page">
         <Link to="/">
           <button className="go-back-button">⬅BACK TO LANDING PAGE</button>

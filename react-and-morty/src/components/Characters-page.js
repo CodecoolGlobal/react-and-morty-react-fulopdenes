@@ -11,7 +11,7 @@ export default function Characters() {
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
     setPage(value);
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 500, behavior: 'smooth' })
   };
 
   const [charDataLoaded, setCharDataLoaded] = useState(false);

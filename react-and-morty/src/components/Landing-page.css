@@ -7,7 +7,6 @@ h4 {
     text-shadow: rgb(0 0 0) 0px 0px 2px;
 }
 
-
 h2 {
     font-size: 4rem;
     color:rgb(32 142 69);
@@ -28,7 +27,7 @@ h1 {
 }
 
 h5 {
-    color:rgb(32 142 69);
+    color:rgb(255, 255, 255);
     width: 30%;
     font-family: Bell MT;
     font-weight: 1000;
@@ -36,8 +35,7 @@ h5 {
     padding-right: 40px;
     text-align: center;
     text-shadow: rgb(0 0 0) 0px 0px 5px;
-    -webkit-text-stroke: 0.5px rgb(47, 201, 98);;
-
+    -webkit-text-stroke: 0.5px rgb(47, 201, 98);
 }
 
 .landing-page-welcome-text-container {
@@ -47,7 +45,83 @@ h5 {
     align-items: center;
 }
 
+#landing-image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
 
+.landing-page{
+    margin-top: 10px;
+}
 
+#char-portal{
+    position: absolute;
+    left: 250px;
+    bottom: 100px;
+    height: 600px;
+    width: 200px;
+}
 
+#loc-portal{
+    position: absolute;
+    right: 300px;
+    top: 35px;
+    height: 600px;
+    width: 200px;
+}
 
+#char-text{
+    background: linear-gradient(
+            to right, rgba(251, 252, 249, 0.555), rgb(168,204,84),
+            rgb(92,174,74),  rgb(32,142,69));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    font-size: 60px;
+    font-weight: 700;
+    position: absolute;
+    left: 170px;
+    bottom: 350px;
+    opacity: 0%;
+    transition: 1200ms;
+    transform: scaleX(10%);
+}
+
+#char-portal:hover + #char-text{
+    background: linear-gradient(
+            to right, rgba(251, 252, 249, 0.555), rgb(168,204,84),
+            rgb(92,174,74),  rgb(32,142,69));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    transform: translateX(270px) scaleX(100%);
+    opacity: 100%;
+    transition: 1200ms;
+}
+
+#loc-text{
+    background: linear-gradient(
+            to left, rgba(251, 252, 249, 0.555), rgb(168,204,84),
+            rgb(92,174,74),  rgb(32,142,69));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    font-size: 60px;
+    font-weight: 700;
+    position: absolute;
+    right: 215px;
+    top: 325px;
+    opacity: 0%;
+    transition: 1200ms;
+    transform: scaleX(10%);
+}
+
+#loc-portal:hover + #loc-text{
+    background: linear-gradient(
+            to left, rgba(251, 252, 249, 0.555), rgb(168,204,84),
+            rgb(92,174,74),  rgb(32,142,69));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    transform: translateX(-270px) scaleX(100%);
+    opacity: 100%;
+    transition: 1200ms;
+}

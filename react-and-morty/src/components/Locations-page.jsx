@@ -3,7 +3,6 @@ import LocationCards from "./LocationCards";
 import { useLocations } from "../api/useData";
 import { useState, useEffect } from "react";
 import "./Pagination.css";
-
 import Box from "@mui/material/Box";
 import { Pagination } from "@mui/material";
 

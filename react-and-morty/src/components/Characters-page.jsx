@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import CharacterCards from "./CharacterCards";
 import { useCharacters } from "../api/useData";
 import { useState, useEffect } from "react";
-import "./Pagination.css";
 import Box from "@mui/material/Box";
 import { Pagination } from "@mui/material";
 import Header from "./Header";
+import "./Pagination.css";
+import "./Characters-page.css";
 
 export default function Characters() {
   const [page, setPage] = useState(1);

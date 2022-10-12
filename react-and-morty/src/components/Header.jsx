@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import headerImage from "../images/Header.png";
 import sunImage from "../images/Sun.png";
+
 export default function Header() {
   return (
     <div className="header">

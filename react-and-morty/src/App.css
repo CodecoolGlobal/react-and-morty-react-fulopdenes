@@ -1,18 +1,20 @@
-html, body {
+html,
+body {
     margin: 0;
     background-color: rgb(28, 5, 55);
     color: chartreuse;
+    overflow-x: hidden;
 }
 
-.character-page{
+.character-page {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-#character-title{
+#character-title {
     width: 100%;
     text-align: center;
     font-size: 42px;
@@ -22,22 +24,22 @@ html, body {
     border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-#landing-image{
+#landing-image {
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 0;
 }
 
-.pagination{
+.pagination {
     width: 100%;
 }
 
-.landing-page{
+.landing-page {
     margin: 0;
 }
 
-#title-text{
+#title-text {
     position: absolute;
     z-index: 1;
     top: 10px;
@@ -50,4 +52,20 @@ html, body {
 
 .css-r93niq-MuiButtonBase-root-MuiPaginationItem-root {
     color: white !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(192, 136, 52);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(64, 129, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(37, 74, 0);
 }

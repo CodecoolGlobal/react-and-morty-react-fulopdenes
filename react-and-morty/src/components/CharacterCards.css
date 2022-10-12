@@ -8,8 +8,8 @@
 .char-card-viewport {
     width: 240px;
     height: 340px;
-    /* border: 1px solid white; */
-    border: 10px solid transparent;
+    border: 1px solid white;
+    /* border: 10px solid transparent; */
     box-shadow: 0 0 5px 2px green;
     border-radius: 1rem;
     color: black;
@@ -44,8 +44,8 @@
 }
 
 .char-name{
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
     box-shadow: 0px 2px 15px 1px black;
     z-index: 1;
     position: relative;

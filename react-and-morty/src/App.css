@@ -10,3 +10,19 @@ body {
   color: chartreuse;
   overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(192, 136, 52);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(64, 129, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(37, 74, 0);
+}

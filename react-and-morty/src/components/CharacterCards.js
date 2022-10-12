@@ -7,8 +7,11 @@ const Card = (props) => {
 
   return (
     <div
+      role={"show-more-data"}
       onClick={() => setIsClicked(!isClicked)}
-      className={isClicked ? "char-card-viewport clicked" : "char-card-viewport"}
+      className={
+        isClicked ? "char-card-viewport clicked" : "char-card-viewport"
+      }
     >
       <div className="character-card">
         <div className="main-info">
@@ -24,11 +27,7 @@ const Card = (props) => {
             }
             alt={char.name}
           ></img>
-          <div
-            className="char-species"
-          >
-            {char.species}
-          </div>
+          <div className="char-species">{char.species}</div>
         </div>
         <div className="more-info-div">
           <div>

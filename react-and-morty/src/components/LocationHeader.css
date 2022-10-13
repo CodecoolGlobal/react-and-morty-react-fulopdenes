@@ -95,6 +95,7 @@
   z-index: 2;
   transition: all 1s ease-in;
 }
+
 @keyframes floatingHeads {
   0% {
     transform: translate(0, 0px);

@@ -16,6 +16,11 @@
     margin: 15px 10px;
     overflow: hidden;
     cursor: pointer;
+    background-image: url("../images/card-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
     transition: 500ms;
 }
 
@@ -29,7 +34,8 @@
 .main-info {
     display: flex;
     flex-direction: column;
-    background-color: rgb(226, 161, 64);
+    /* background-color: rgb(226, 161, 64); */
+    
     /* border: 8px solid rgb(251, 184, 84); */
     justify-content: space-between;
     text-align: center;
@@ -44,6 +50,7 @@
 }
 
 .char-name{
+    display: flex;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     box-shadow: 0px 2px 15px 1px black;
@@ -51,6 +58,9 @@
     position: relative;
     transition: 500ms;
     padding: 3px;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
 }
 
 .char-image{
@@ -93,7 +103,11 @@
 .more-info-div{
     height: 50%;
     transition: 500ms;
-    background-color: rgb(226, 161, 64);
+    background-image: url("../images/card-background-gradient.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
     /* margin: 10px; */
     /* border-radius: 1rem; */
     justify-content: space-around;
@@ -110,7 +124,9 @@
 
 .label {
     font-size: normal;
-    font-weight: normal;
+    font-weight: 650;
     font-style: italic;
     text-align: left;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
 }

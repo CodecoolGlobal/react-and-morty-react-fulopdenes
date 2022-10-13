@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   margin: 7px;
+
 }
 
 .MuiPaginationItem-ellipsis {
@@ -11,10 +12,17 @@
 
 .css-r93niq-MuiButtonBase-root-MuiPaginationItem-root {
   color: white !important;
+  border: 0;
+  transform: scale(1);
+  transition: 200ms;
+}
+
+.css-r93niq-MuiButtonBase-root-MuiPaginationItem-root:hover {
+  border: 1px solid rgba(25, 118, 210, 0.5);
+  transition: 200ms;
+  transform:scale(120%);
 }
 
 .css-1b2iw0b {
   width: 100% !important;
 }
-
-/* pagination fixed */

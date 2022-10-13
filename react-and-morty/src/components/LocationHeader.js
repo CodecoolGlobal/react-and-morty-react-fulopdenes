@@ -15,38 +15,33 @@ export default function Header() {
         className="loc-logo-image"
         src={rickAndMortyLogo}
       ></img>
-      <a href="#">
-        <img
-          className="headRed"
-          src={headRed}
-          alt={"red head"}
-          border={0}
-        ></img>
-        <img
-          className="headYellow"
-          src={headYellow}
-          alt={"yellow head"}
-          border={0}
-        ></img>
-        <img
-          className="headGreen"
-          src={headGreen}
-          alt={"green head"}
-          border={0}
-        ></img>
-        <img
-          className="headBlue"
-          src={headBlue}
-          alt={"blue head"}
-          border={0}
-        ></img>
-        <img
-          className="headFront"
-          src={headFront}
-          alt={"frontal head"}
-          border={0}
-        ></img>
-      </a>
+
+      <img className="headRed" src={headRed} alt={"red head"} border={0}></img>
+      <img
+        className="headYellow"
+        src={headYellow}
+        alt={"yellow head"}
+        border={0}
+      ></img>
+      <img
+        className="headGreen"
+        src={headGreen}
+        alt={"green head"}
+        border={0}
+      ></img>
+      <img
+        className="headBlue"
+        src={headBlue}
+        alt={"blue head"}
+        border={0}
+      ></img>
+      <img
+        className="headFront"
+        src={headFront}
+        alt={"frontal head"}
+        border={0}
+      ></img>
+
       <img
         className="loc-header-image"
         src={headerImage}

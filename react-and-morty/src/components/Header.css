@@ -79,7 +79,8 @@
   cursor: default;
 }
 
-#character-title:hover, #character-title:focus{
+#character-title:hover,
+#character-title:focus {
   text-shadow: 5px 5px 2px black;
   transition: 500ms;
 }
@@ -102,25 +103,6 @@
   border-radius: 100%;
 }
 
-.sunDown-image {
-  mix-blend-mode: overlay;
-  position: absolute;
-  top: 170px;
-  mix-blend-mode: normal;
-  animation: floating;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.55, 0.35, 0.65, 0.96);
-  height: 100px;
-  width: auto;
-  z-index: 2;
-  transform: scale(2);
-  cursor: default;
-  transition: all 0.5s ease-in;
-  box-shadow: 0px 0px 10px 5px rgba(255, 245, 130, 0.84);
-  border-radius: 100%;
-}
-
 .sun-little {
   transform: scale(0.7);
   transition: all 0.5s ease-in;
@@ -130,12 +112,6 @@ a.sun-image {
   display: block;
   opacity: 1;
   cursor: default;
-}
-a:hover .sun-image {
-  visibility: hidden;
-  opacity: 0;
-  cursor: default;
-  transition: all 0.5s ease-out;
 }
 
 @keyframes floating {

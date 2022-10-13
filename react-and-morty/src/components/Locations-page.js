@@ -92,9 +92,7 @@ export default function Locations() {
               </div>
             </Box>
           </>
-        ) : (
-          console.log("false")
-        )}
+        ) : <></>}
       </div>
     </>
   );

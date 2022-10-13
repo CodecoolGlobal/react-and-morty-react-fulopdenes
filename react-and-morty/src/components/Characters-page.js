@@ -7,7 +7,7 @@ import Header from "./Header";
 import "./pagination.css";
 import "./Characters-page.css";
 
-export default function Characters() {
+export default function Characters({scrollStatus}) {
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
     setPage(value);
@@ -25,7 +25,7 @@ export default function Characters() {
 
   return (
     <div>
-      <Header />
+      <Header scrollStatus={scrollStatus}/>
       <div className="character-page">
         {charDataLoaded ? (
           <>

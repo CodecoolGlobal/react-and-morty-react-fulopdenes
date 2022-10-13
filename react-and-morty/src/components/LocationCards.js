@@ -68,7 +68,6 @@ const Card = (props) => {
 
 export default function LocationCards(props) {
   const location = props.location.results;
-  console.log(location);
   if (location !== undefined) {
     return (
       <div className="loc-cards">

@@ -15,9 +15,9 @@
 .go-back-button{
   position: absolute;
   top: 5px;
-  left: -8.8%;
+  left: -7.2rem;
   margin-top: 10px;
-  width: 20%;
+  width: auto;
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0);
   clip-path: polygon(
@@ -33,6 +33,7 @@
   mix-blend-mode: overlay;
   cursor: pointer;
   transition: all 500ms;
+  white-space: nowrap;
 }
 
 .go-back-button:hover{

@@ -12,3 +12,7 @@
         letter-spacing: 25px;
         text-shadow: 2px 2px 2px black;
     }
+
+.locations-page{
+    background-color: rgba(0, 0, 0, 0.461);
+}

@@ -27,7 +27,7 @@ export default function Locations() {
   return (
     <>
       <LocationHeader />
-      <div className="location-page">
+      <div className="locations-page">
         <Link to="/">
           <button className="go-back-button">⬅ BACK TO LANDING PAGE</button>
         </Link>

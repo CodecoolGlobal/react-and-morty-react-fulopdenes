@@ -24,16 +24,18 @@ export default function Header({ scrollStatus }) {
       ></img>
       <a href="#">
         <img
-          className={scrollStatus < 50 ? "sunDown-image" : "sunDown-image sun-little" }
+          className="sunDown-image"
           src={sunDown}
           alt={"screaming sun"}
+          style={{display: scrollStatus < 50 ? "block" : "none"}}
           border={0}
         ></img>
         <img
-          className={scrollStatus < 50 ? "sun-image" : "sun-image sun-little" }
+          className="sun-image"
           src={sunImage}
           alt={"screaming sun"}
           border={0}
+          style={{display: scrollStatus < 50 ? "block" : "none"}}
         ></img>
       </a>
     </div>

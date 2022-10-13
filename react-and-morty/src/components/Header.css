@@ -33,6 +33,7 @@
 }
 
 .go-back-button {
+  z-index: 5;
   position: absolute;
   top: 5px;
   left: -7.2rem;

@@ -6,19 +6,6 @@ import scream from "../sound/scream1.mp3";
 export default function Header({ scrollStatus }) {
   const audio = new Audio(scream);
   audio.loop = false;
-  // return (
-  //   <div>
-  //     <button
-  //       onClick={() => {
-  //         audio.loop = true;
-  //         audio.play();
-  //       }}
-  //     >
-  //       Play
-  //     </button>
-  //     <button onClick={() => (audio.loop = false)}>Pause</button>
-  //   </div>
-  // );
 
   return (
     <div

@@ -11,7 +11,7 @@
   height: 25rem;
   background-image: url("../images/Header.png");
   background-size: cover;
-  background-position: center;
+  background-position: 50% 70%;
 }
 
 .logo-image {
@@ -64,7 +64,7 @@
   transition: all 500ms;
 }
 
-#character-title{
+.title{
   margin-top: 2rem;
   font-size: 6.5vw;
   font-weight: 800;

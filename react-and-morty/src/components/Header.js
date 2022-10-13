@@ -15,7 +15,7 @@ export default function Header({ scrollStatus }) {
       <Link to="/">
         <button className="go-back-button">⬅ BACK TO LANDING PAGE</button>
       </Link>
-      <p id="character-title">CHARACTERS</p>
+      <p className="title">CHARACTERS</p>
       <img
         alt="rick and morty logo"
         className={scrollStatus < 50 ? "logo-image" : "logo-image logo-image-invisible"}

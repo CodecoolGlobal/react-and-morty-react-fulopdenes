@@ -8,7 +8,7 @@ import "./pagination.css";
 import "./Location-page.css";
 import LocationHeader from "./LocationHeader";
 
-export default function Locations() {
+export default function Locations({scrollStatus}) {
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
     setPage(value);
@@ -26,12 +26,8 @@ export default function Locations() {
 
   return (
     <>
-      <LocationHeader />
+      <LocationHeader  scrollStatus={scrollStatus}/>
       <div className="location-page">
-        <Link to="/">
-          <button className="go-back-button">⬅ BACK TO LANDING PAGE</button>
-        </Link>
-        <p id="location-title">LOCATIONS</p>
         {locDataLoaded ? (
           <>
             <div className="pagination">

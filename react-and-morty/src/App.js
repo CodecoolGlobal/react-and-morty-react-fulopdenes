@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 // import { useCharacters, useLocations } from "./api/useData";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -10,7 +10,9 @@ function App() {
 
   const [scrollStatus, setScrollStatus] = useState(window.scrollY);
 
-  window.addEventListener("scroll", () => setScrollStatus(window.scrollY));
+  useEffect(() => {
+    window.addEventListener("scroll", () => setScrollStatus(window.scrollY));
+  }, [])
 
   return (
     <div className="App">
@@ -19,7 +21,7 @@ function App() {
           <Route path="/">
             <Route index element={<LandingPage />} />
             <Route path="characters" element={<Characters scrollStatus={scrollStatus}/>} />
-            <Route path="locations" element={<Locations />} />
+            <Route path="locations" element={<Locations scrollStatus={scrollStatus}/>} />
           </Route>
         </Routes>
       </BrowserRouter>

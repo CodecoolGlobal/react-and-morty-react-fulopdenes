@@ -9,10 +9,10 @@ import headGreen from "../images/cromulon green.png";
 import headFront from "../images/cromulon front.png";
 export default function Header() {
   return (
-    <div className="header">
+    <div>
       <img
         alt="rick and morty logo"
-        className="logo-image"
+        className="loc-logo-image"
         src={rickAndMortyLogo}
       ></img>
       <a href="#">
@@ -48,7 +48,7 @@ export default function Header() {
         ></img>
       </a>
       <img
-        className="header-image"
+        className="loc-header-image"
         src={headerImage}
         alt={"rick and morty scenery"}
       ></img>

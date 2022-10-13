@@ -10,7 +10,7 @@
     height: 340px;
     border: 1px solid white;
     /* border: 10px solid transparent; */
-    box-shadow: 0 0 5px 2px green;
+    box-shadow: 0 0 5px 2px rgb(254,195,29);
     border-radius: 1rem;
     color: black;
     margin: 15px 10px;
@@ -46,7 +46,8 @@
 
 .char-card-viewport:hover{
     transform: scale(1.05);
-    transition: transform 500ms;
+    box-shadow: 0 0 10px 2px rgb(254,195,29);
+    transition: 500ms;
 }
 
 .char-name{
@@ -72,7 +73,6 @@
     z-index: 0;
     position: relative;
     margin-bottom: 5px;
-    /* border: 3px solid rgb(60, 7, 60); */
     transition: 500ms;
 }
 

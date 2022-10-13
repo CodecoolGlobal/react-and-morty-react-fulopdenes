@@ -1,4 +1,5 @@
 .character-page{
+    margin-top: 25rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

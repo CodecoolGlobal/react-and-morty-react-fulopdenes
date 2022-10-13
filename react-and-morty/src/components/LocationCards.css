@@ -54,6 +54,11 @@
     transition: 500ms;
 }
 
+.location-card:hover::before{
+    filter: hue-rotate(344deg) brightness(0.8) opacity(70%);
+
+}
+
 .loc-main-info {
     height: 50%;
     display: flex;

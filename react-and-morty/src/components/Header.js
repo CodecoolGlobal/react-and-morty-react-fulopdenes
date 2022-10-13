@@ -47,7 +47,15 @@ export default function Header({ scrollStatus }) {
           className="sunDown-image"
           src={sunDown}
           alt={"screaming sun"}
-          style={{ display: scrollStatus < 50 ? "block" : "none" }}
+          // style={{display: scrollStatus < 50 ? "block" : "none"}}
+          style={{
+            height:
+              scrollStatus > 150
+                ? 25
+                : scrollStatus > 0
+                ? 150 - scrollStatus
+                : 100,
+          }}
           border={0}
         ></img>
         <img
@@ -55,7 +63,15 @@ export default function Header({ scrollStatus }) {
           src={sunImage}
           alt={"screaming sun"}
           border={0}
-          style={{ display: scrollStatus < 50 ? "block" : "none" }}
+          // style={{display: scrollStatus < 50 ? "block" : "none"}}
+          style={{
+            height:
+              scrollStatus > 150
+                ? 25
+                : scrollStatus > 0
+                ? 150 - scrollStatus
+                : 100,
+          }}
         ></img>
       </a>
     </div>

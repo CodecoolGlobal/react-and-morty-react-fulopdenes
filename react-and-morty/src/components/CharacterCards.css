@@ -61,7 +61,7 @@
 }
 
 .char-card-viewport:hover::before{
-    filter: hue-rotate(344deg) brightness(0.8);
+    filter: hue-rotate(344deg) brightness(0.9);
 }
 
 .char-name{

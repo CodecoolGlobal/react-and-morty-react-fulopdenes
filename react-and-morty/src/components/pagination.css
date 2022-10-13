@@ -14,7 +14,7 @@
   border: 0;
   font-family: 'Courier New', Courier, monospace !important;
   font-weight: 700 !important;
-  font-size: 17px !important;
+  font-size: 100% !important;
   transform: scale(1);
   transition: 200ms;
 }

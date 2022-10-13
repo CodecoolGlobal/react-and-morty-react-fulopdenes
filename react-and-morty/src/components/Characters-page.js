@@ -24,7 +24,7 @@ export default function Characters() {
   }, [characters]);
 
   return (
-    <>
+    <div>
       <Header />
       <div className="character-page">
         {charDataLoaded ? (
@@ -93,6 +93,6 @@ export default function Characters() {
           </>
         )}
       </div>
-    </>
+    </div>
   );
 }

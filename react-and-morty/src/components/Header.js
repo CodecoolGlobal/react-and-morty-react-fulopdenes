@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import headerImage from "../images/Header.png";
 import sunImage from "../images/sun gif.gif";
@@ -7,6 +7,14 @@ import sunDown from "../images/down sun.gif";
 import rickAndMortyLogo from "../images/Rick-and-Morty.png";
 
 export default function Header() {
+  const [isAtTop, setIsAtTop] = useState(undefined);
+
+  const handleScroll = _ => {
+    // console.log(window.scrollY);
+  }
+
+  window.addEventListener("scroll", handleScroll)
+
   return (
     <div className="header">
       <Link to="/">

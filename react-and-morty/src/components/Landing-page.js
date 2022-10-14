@@ -43,8 +43,8 @@ export default function LandingPage() {
         <div className="page-info">
           <div className="mrPB-1-clicked">
             {infoImage === mrPB1
-              ? "click on me to know more, ooh wee"
-              : "Here you can find information about the different characters and locations so far in the show."}
+              ? "click on ME to know more, about website functionality"
+              : "Here you can find more information about Characters and Locations."}
           </div>
           <img
             alt="mr PoopyButthole"

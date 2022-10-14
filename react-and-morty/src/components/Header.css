@@ -102,6 +102,7 @@
   transform: scale(2);
   box-shadow: 0px 0px 15px 5px rgba(255, 245, 130, 0.84);
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .sun-little {

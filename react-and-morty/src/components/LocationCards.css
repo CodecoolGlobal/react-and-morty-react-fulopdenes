@@ -49,13 +49,13 @@
     background-image: url("../images/card-background.png");
     background-size: cover;
     background-repeat: no-repeat;
-    filter: hue-rotate(344deg) brightness(0.7) opacity(60%);
+    filter: hue-rotate(344deg) brightness(0.5) opacity(70%);
     z-index: 0;
     transition: 500ms;
 }
 
 .location-card:hover::before{
-    filter: hue-rotate(344deg) brightness(0.8) opacity(70%);
+    filter: hue-rotate(344deg) brightness(0.65) opacity(85%);
 
 }
 

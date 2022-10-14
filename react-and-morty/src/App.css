@@ -16,13 +16,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(192, 136, 52);
+  background: rgb(254,195,29);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(64, 129, 0);
+  background: rgb(83, 50, 3);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(37, 74, 0);
+  background: rgb(52, 31, 2);
 }

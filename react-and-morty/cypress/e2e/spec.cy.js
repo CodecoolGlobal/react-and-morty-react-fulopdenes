@@ -12,10 +12,10 @@ describe("testing the Webcatalog with Cypress", () => {
     cy.findByRole("img", { name: /rick sanchez/i }).click();
     cy.findByRole("img", { name: /summer smith/i }).click();
     cy.get(
-      "#root > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2)"
+      "#root > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2)"
     ).click();
     cy.get(
-      "#root > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2)"
+      "#root > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2)"
     ).click();
     cy.scrollTo("top");
     cy.findByRole("button", { name: /⬅ back to landing page/i }).click();
@@ -24,18 +24,11 @@ describe("testing the Webcatalog with Cypress", () => {
     cy.scrollTo("center");
     cy.findByRole("img", { name: /location portal/i }).click();
     cy.get(
-      "#root > div > div:nth-child(2) > div:nth-child(4) > div:nth-child(4) > div > div:nth-child(1)"
+      "#root > div > div > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(1)"
     ).click();
     cy.get(
-      "#root > div > div:nth-child(2) > div:nth-child(4) > div:nth-child(5) > div > div:nth-child(1)"
+      "#root > div > div > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div > div:nth-child(1)"
     ).click();
-    cy.get(
-      "#root > div > div:nth-child(2) > div:nth-child(4) > div:nth-child(4) > div > div:nth-child(2) > div > div:nth-child(2)"
-    ).click();
-    cy.get(
-      "#root > div > div:nth-child(2) > div:nth-child(4) > div:nth-child(5) > div > div:nth-child(2) > div > div:nth-child(2)"
-    ).click();
-    cy.scrollTo("top");
     cy.findByRole("button", { name: /⬅ back to landing page/i }).click();
   });
 });

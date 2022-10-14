@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
-import headerImage from "../images/Header.png";
 import sunImage from "../images/sun gif.gif";
-import sunDown from "../images/down sun.gif";
 import rickAndMortyLogo from "../images/Rick-and-Morty.png";
-
+import scream from "../sound/scream1.mp3";
 export default function Header({ scrollStatus }) {
+  const audio = new Audio(scream);
+  audio.loop = false;
 
   return (
     <div
@@ -18,26 +18,30 @@ export default function Header({ scrollStatus }) {
       <p className="title">CHARACTERS</p>
       <img
         alt="rick and morty logo"
-        className={scrollStatus < 50 ? "logo-image" : "logo-image logo-image-invisible"}
+        className={
+          scrollStatus < 50 ? "logo-image" : "logo-image logo-image-invisible"
+        }
         src={rickAndMortyLogo}
-
       ></img>
-      <a href="#">
-        <img
-          className="sunDown-image"
-          src={sunDown}
-          alt={"screaming sun"}
-          style={{display: scrollStatus < 50 ? "block" : "none"}}
-          border={0}
-        ></img>
-        <img
-          className="sun-image"
-          src={sunImage}
-          alt={"screaming sun"}
-          border={0}
-          style={{display: scrollStatus < 50 ? "block" : "none"}}
-        ></img>
-      </a>
+      <img
+        onClick={() => {
+          audio.loop = !audio.loop;
+          audio.loop ? audio.play() : audio.pause();
+        }}
+        className="sun-image"
+        src={sunImage}
+        alt={"screaming sun"}
+        border={0}
+        // style={{display: scrollStatus < 50 ? "block" : "none"}}
+        style={{
+          height:
+            scrollStatus > 150
+              ? 25
+              : scrollStatus > 0
+              ? 150 - scrollStatus
+              : 100,
+        }}
+      ></img>
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import LocationCards from "./LocationCards";
 import { useLocations } from "../api/useData";
 import { useState, useEffect } from "react";

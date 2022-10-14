@@ -3,18 +3,15 @@ import "./Landing-page.css";
 import "./pagination.css";
 import rickAndMortyLogo from "../images/Rick-and-Morty.png";
 import portalGif from "../images/portal.gif";
-import mrPB1 from "../images/mrPoopyButthole1.png"
-import mrPB2 from "../images/mrPoopyButthole2.png"
+import mrPB1 from "../images/mrPoopyButthole1.png";
+import mrPB2 from "../images/mrPoopyButthole2.png";
 import { useState } from "react";
 
 export default function LandingPage() {
-
-  const [infoImage, setInfoImage] = useState(mrPB1)
+  const [infoImage, setInfoImage] = useState(mrPB1);
   const handleInfo = () => {
-    infoImage === mrPB1 ?
-    setInfoImage(mrPB2) :
-    setInfoImage(mrPB1)
-  }
+    infoImage === mrPB1 ? setInfoImage(mrPB2) : setInfoImage(mrPB1);
+  };
 
   return (
     <>
@@ -40,24 +37,21 @@ export default function LandingPage() {
         <Link to="/locations" style={{ textDecoration: "none" }}>
           <div className="portal">
             <div className="portal-text">LOCATIONS</div>
-            <img
-              src={portalGif}
-              id="loc-portal"
-              alt={"Location Portal"}
-            ></img>
+            <img src={portalGif} id="loc-portal" alt={"Location Portal"}></img>
           </div>
         </Link>
         <div className="page-info">
           <div className="mrPB-1-clicked">
-            {infoImage === mrPB1 ?
-            "click on me to know more, ooh wee" :
-            "Here you can find information about the different characters and locations so far in the show."
-            }</div>
+            {infoImage === mrPB1
+              ? "click on me to know more, ooh wee"
+              : "Here you can find information about the different characters and locations so far in the show."}
+          </div>
           <img
-          className={infoImage === mrPB1 ?
-                      "mrPB-1" : "mrPB-2"}
-          src={infoImage}
-          onClick={handleInfo}></img>
+            alt="mr PoopyButthole"
+            className={infoImage === mrPB1 ? "mrPB-1" : "mrPB-2"}
+            src={infoImage}
+            onClick={handleInfo}
+          ></img>
         </div>
       </div>
       <Outlet />

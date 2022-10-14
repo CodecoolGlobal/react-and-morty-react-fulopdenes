@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   margin: 7px;
-
 }
 
 .MuiPaginationItem-ellipsis {
@@ -11,18 +10,42 @@
 }
 
 .css-r93niq-MuiButtonBase-root-MuiPaginationItem-root {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.799) !important;
   border: 0;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-weight: 700 !important;
+  font-size: 100% !important;
   transform: scale(1);
   transition: 200ms;
 }
 
+.css-r93niq-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+  border: 1px solid rgba(254,195,29,0.7) !important;
+  background-color: rgba(210, 118, 25, 0.12) !important;
+  color: white !important;
+}
+
 .css-r93niq-MuiButtonBase-root-MuiPaginationItem-root:hover {
-  border: 1px solid rgba(25, 118, 210, 0.5);
+  border: 1px solid rgba(254,195,29,0.7);
+  color: white !important;
   transition: 200ms;
   transform:scale(120%);
 }
 
 .css-1b2iw0b {
+  width: 100% !important;
+}
+
+[aria-label="Go to first page"] {
+  border-top-left-radius: 1rem !important;
+  border-bottom-left-radius: 1rem !important;
+}
+
+[aria-label="Go to last page"] {
+  border-top-right-radius: 1rem !important;
+  border-bottom-right-radius: 1rem !important;
+}
+
+[aria-label="pagination navigation"]{
   width: 100% !important;
 }

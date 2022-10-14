@@ -8,7 +8,7 @@ import "./pagination.css";
 import "./Location-page.css";
 import LocationHeader from "./LocationHeader";
 
-export default function Locations() {
+export default function Locations({ scrollStatus }) {
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
     setPage(value);
@@ -25,43 +25,43 @@ export default function Locations() {
   }, [locations]);
 
   return (
-    <>
-      <LocationHeader />
+    <div>
+      <LocationHeader scrollStatus={scrollStatus} />
       <div className="locations-page">
         <Link to="/">
           <button className="go-back-button">⬅ BACK TO LANDING PAGE</button>
         </Link>
-        <p id="location-title">LOCATIONS</p>
+
         {locDataLoaded ? (
           <>
             <div className="pagination">
-            <Box
-              sx={{
-                margin: "auto",
-                width: "fit-content",
-                alignItems: "center",
-                bgcolor: "rgba(0, 0, 0, 0.256)",
-                borderRadius: "2rem",
-                transition: "500ms",
-                '&:hover': {
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  transition: "500ms"
-                },
-              }}
-            >
-              <div className="pagination">
-              <Pagination
-                count={locations.info.pages}
-                page={page}
-                variant="outlined"
-                shape="rounded"
-                color="primary"
-                onChange={handleChange}
-                showFirstButton={true}
-                showLastButton={true}
-              />
-              </div>
-            </Box>
+              <Box
+                sx={{
+                  margin: "auto",
+                  width: "fit-content",
+                  alignItems: "center",
+                  bgcolor: "rgba(0, 0, 0, 0.256)",
+                  borderRadius: "2rem",
+                  transition: "500ms",
+                  "&:hover": {
+                    backgroundColor: "rgba(0, 0, 0, 0.5)",
+                    transition: "500ms",
+                  },
+                }}
+              >
+                <div className="pagination">
+                  <Pagination
+                    count={locations.info.pages}
+                    page={page}
+                    variant="outlined"
+                    shape="rounded"
+                    color="primary"
+                    onChange={handleChange}
+                    showFirstButton={true}
+                    showLastButton={true}
+                  />
+                </div>
+              </Box>
             </div>
             <LocationCards location={locations} />
             <Box
@@ -72,28 +72,30 @@ export default function Locations() {
                 bgcolor: "rgba(0, 0, 0, 0.256)",
                 borderRadius: "2rem",
                 transition: "500ms",
-                '&:hover': {
+                "&:hover": {
                   backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  transition: "500ms"
+                  transition: "500ms",
                 },
               }}
             >
               <div className="pagination">
-              <Pagination
-                count={locations.info.pages}
-                page={page}
-                variant="outlined"
-                shape="rounded"
-                color="primary"
-                onChange={handleChange}
-                showFirstButton={true}
-                showLastButton={true}
-              />
+                <Pagination
+                  count={locations.info.pages}
+                  page={page}
+                  variant="outlined"
+                  shape="rounded"
+                  color="primary"
+                  onChange={handleChange}
+                  showFirstButton={true}
+                  showLastButton={true}
+                />
               </div>
             </Box>
           </>
-        ) : <></>}
+        ) : (
+          <></>
+        )}
       </div>
-    </>
+    </div>
   );
 }

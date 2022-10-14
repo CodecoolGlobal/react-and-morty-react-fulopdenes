@@ -7,7 +7,6 @@ import Characters from "./components/Characters-page";
 import Locations from "./components/Locations-page";
 
 function App() {
-
   const [scrollStatus, setScrollStatus] = useState(window.scrollY);
 
   window.addEventListener("scroll", () => setScrollStatus(window.scrollY));
@@ -18,8 +17,14 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<LandingPage />} />
-            <Route path="characters" element={<Characters scrollStatus={scrollStatus}/>} />
-            <Route path="locations" element={<Locations />} />
+            <Route
+              path="characters"
+              element={<Characters scrollStatus={scrollStatus} />}
+            />
+            <Route
+              path="locations"
+              element={<Locations scrollStatus={scrollStatus} />}
+            />
           </Route>
         </Routes>
       </BrowserRouter>

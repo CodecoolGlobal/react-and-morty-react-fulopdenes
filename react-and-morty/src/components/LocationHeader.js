@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import "./LocationHeader.css";
 import rickAndMortyLogo from "../images/Rick-and-Morty.png";

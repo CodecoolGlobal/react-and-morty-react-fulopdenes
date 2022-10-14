@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import LocationCards from "./LocationCards";
 import { useLocations } from "../api/useData";
 import { useState, useEffect } from "react";
@@ -7,7 +6,7 @@ import Box from "@mui/material/Box";
 import "./pagination.css";
 import "./Location-page.css";
 import LocationHeader from "./LocationHeader";
-
+import { Link } from "react-router-dom";
 export default function Locations({ scrollStatus }) {
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {

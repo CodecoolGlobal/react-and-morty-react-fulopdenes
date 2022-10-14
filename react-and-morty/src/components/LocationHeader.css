@@ -63,14 +63,15 @@
   width: auto;
   height: 225px;
   z-index: 4;
-  transition: all 1s ease-in;
+  transition: all 0.3s ease-in;
+  opacity: 40%;
 }
 .headBlue {
   animation-name: floatingHeads;
   animation-duration: 5.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  opacity: 60%;
+  opacity: 30%;
   margin-top: 5px;
   position: absolute;
   top: 7%;
@@ -80,7 +81,7 @@
   transform: rotate(10deg);
   width: auto;
   z-index: 2;
-  transition: all 1s ease-in;
+  transition: all 0.3s ease-in;
 }
 .headYellow {
   animation-name: floatingHeads;
@@ -113,7 +114,7 @@
 
   width: auto;
   z-index: 2;
-  transition: all 1s ease-in;
+  transition: all 0.3s ease-in;
 }
 .headFront {
   animation-name: floatingHeads;
@@ -131,7 +132,7 @@
   opacity: 75%;
   width: auto;
   z-index: 2;
-  transition: all 1s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @keyframes floatingHeads {

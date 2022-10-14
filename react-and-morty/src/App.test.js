@@ -72,3 +72,5 @@ test("BY CLICKING AT LOCATIONCARD IN LIST, MORE INFO SHOW UP", () => {
     "location-card-viewport clicked"
   );
 });
+
+//
